@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>      
+        <meta charset="utf-8">
+        <meta name="keywords" content="portfolio, about me, o mnie">
+        <meta name="author" content="Igor Stefaniak">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Igor Stefaniak</title>
+
+        <meta name="description" content="">
+
+        <link rel="icon" href="./img/logo.png">
+        <link rel="apple-touch-icon" href="./img/logo.png">
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./main-style.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@2.0.7/css/boxicons.min.css">
+
+        <script src="./jquery-1.10.2.min.js"></script>
+
+    </head>
+    <body>
+        <div class="loading">
+            <div class="lds-ripple"><div></div><div></div></div>
+        </div>
+        <div class="container" id="container">
+            <center>
+                <div class="name">
+                    <div class="avatar-text">
+                        <span>Igor Stefaniak</span>
+                    </div>
+                    <div class="avatar">
+                        <img src="./avatar.png" />
+                    </div>
+                </div>
+                <div class="separator"></div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <a href="#">
+                        <div class="feature">
+                            <div class="feature-header">
+                                <div class="feature-icon"><i id="icon1" class="bx bxl-javascript"></i></i></div>
+                                <div class="feature-title">skrypty</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="feature">
+                            <div class="feature-header">
+                                <div class="feature-icon"><i id="icon1" class="bx bx-file"></i></div>
+                                <div class="feature-title">pliki</div>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="#">
+                        <div class="feature">
+                            <div class="feature-header">
+                                <div class="feature-icon"><i id="icon1" class="bx bx-photo-album"></i></div>
+                                <div class="feature-title">grafika</div>
+                            </div>
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </center>
+        </div>
+        <script src="./loading.js"></script>
+        <script>
+document.getElementById("container").onclick = function() {alert("Tutaj na razie niczego nie ma!\nNiedługo pojawią się nowe materiały :)");}
+
+        </script>
+    </body>
+</html>
