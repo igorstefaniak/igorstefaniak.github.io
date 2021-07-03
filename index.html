@@ -8,6 +8,7 @@
         <title>Igor Stefaniak</title>
 
         <meta name="description" content="">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
         <link rel="icon" href="./img/logo.png">
         <link rel="apple-touch-icon" href="./img/logo.png">
@@ -34,7 +35,7 @@
                     </div>
                 </div>
                 <div class="separator"></div>
-                <div class="row">
+                <div id="row" class="row">
                     <div class="col-lg-12">
                         <a href="#">
                         <div class="feature">
@@ -52,22 +53,26 @@
                             </div>
                         </div>
                         </a>
-                        <a href="#">
+                        <a href="#" onclick="brak()">
                         <div class="feature">
                             <div class="feature-header">
                                 <div class="feature-icon"><i id="icon1" class="bx bx-photo-album"></i></div>
                                 <div class="feature-title">grafika</div>
                             </div>
                         </div>
-                    </a>
+                        </a>
                     </div>
                 </div>
             </center>
         </div>
         <script src="./loading.js"></script>
         <script>
-document.getElementById("container").onclick = function() {alert("Tutaj na razie niczego nie ma!\nNiedługo pojawią się nowe materiały :)");}
-
+function brak() {alert("Tutaj na razie niczego nie ma!\nNiedługo pojawią się nowe materiały :)");}
         </script>
+        <style>
+@media screen and (min-width : 320px) and (max-width : 480px) {
+    .name{display: grid;}
+  }
+        </style>
     </body>
 </html>

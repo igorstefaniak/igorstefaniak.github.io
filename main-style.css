@@ -13,6 +13,7 @@ html {
 body {
     background-image: url("./pattern.png"), linear-gradient(170deg,#0e1118, #262e3f);
     box-sizing: content-box;
+    margin: 0px;
 }
 
 img {
@@ -129,6 +130,7 @@ img {
     display: inline-block;
     vertical-align: top;
     text-align: center;
+    transition: all .20s cubic-bezier(0.4, 0, 1, 1);
 }
 .feature:hover {
     transform: scale(1.2);
@@ -147,3 +149,4 @@ img {
 .feature-title{
     font-size: 25px;
 }
+
