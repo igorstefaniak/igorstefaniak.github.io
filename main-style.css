@@ -7,6 +7,7 @@ html {
     color: white;
     font-family: 'Comfortaa';
     text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
 
 }
 
