@@ -1,0 +1,27 @@
+:root {
+    --success: #28a745;
+    --info: #17a2b8;
+    --warning: #ffc107;
+    --danger: #dc3545;
+    --light: #f8f9fa;
+    --dark: #343a40;
+}
+
+*{
+    font-family: 'Comfortaa', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    display: flex;
+    position: fixed;
+    top: 95px;
+    height: 60px;
+    right: 150px;
+    left: 150px;
+    align-items: center;
+    justify-content: center;
+    transition: all .20s cubic-bezier(0.4, 0, 1, 1);
+}
