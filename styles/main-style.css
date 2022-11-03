@@ -1,27 +1,220 @@
+@import url("../fonts/Chillax/css/chillax.css");
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+
+/* Igor Stefaniak */
+
 :root {
     --success: #28a745;
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
     --light: #f8f9fa;
-    --dark: #343a40;
+    --dark: #151418;
+    --accent: #1aa7ec;
 }
 
-*{
-    font-family: 'Comfortaa', sans-serif;
+* {
     box-sizing: border-box;
     text-decoration: none;
     color: white;
+    font-family: 'Chillax-Regular';
 }
 
-nav {
-    display: flex;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: url("../images/background-pattern.png"), var(--dark);
+}
+
+._vanish {
+    visibility: hidden;
+    opacity: 0;
+}
+
+#container {
+    margin: 0px auto;
+    width: 900px;
+    background-color: var(--dark);
+    height: 100%;
+}
+
+:focus-visible {
+    outline: 3px solid var(--light);
+    border-radius: 2px;
+  }
+
+:focus-visible .button .bx {
+    color: var(--accent)!important; 
+}
+/* --- */
+
+.top-navbar {
     position: fixed;
-    top: 95px;
+    top: 25px;
     height: 60px;
-    right: 150px;
-    left: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 30px 30px 30px 30px;
+    padding: 10px 0px;
+    right: 100px;
+    left: 100px;
+    z-index: 100;
+}
+
+.items-navbar{
+    align-items: center;
+    display: flex;
+}
+
+.dropdown{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-navbar .button {
+    width: 60px;
+    height: 60px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+    border-radius: 20px;
     transition: all .20s cubic-bezier(0.4, 0, 1, 1);
+    text-decoration: none;
+  }
+
+.top-navbar .button i {
+    margin: 5px;
+    font-size: 1.875rem;
+    pointer-events: visible;
+    cursor: pointer;
+    background: transparent;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.top-navbar .button:hover i{
+    color: var(--accent);
+}
+
+.top-navbar .button:hover{
+    transform: scale(1.2);
+    color: var(--accent);
+}
+
+a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu {
+    position: fixed;
+    width: 164px;
+    background: #1d1c21;
+    z-index: 100;
+    top: 90px;
+    border-radius: 23px;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+}
+
+.menu li{
+    list-style-type: none;
+}
+
+.menu ul li{
+  display: flex;
+  width: -webkit-fill-available;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu ul li a, .text-separator{
+  display: flex;
+  justify-content: center;
+  width: -webkit-fill-available;
+  transition: all .20s cubic-bezier(0.4, 0, 1, 1);
+  align-items: center;
+}
+
+.menu ul li a:hover{
+  transform: scale(1.1);
+}
+
+.menu ul li a i, .menu ul li i{
+  margin-right: 6px;
+}
+
+.menu ul li{
+  margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+  font-size: 15px;
+}
+
+.menu ul{
+  margin: 8px 2px 8px 2px;
+}
+
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px;
+}
+
+.menu .title{
+    font-weight: 800;
+    margin: 0.1rem!important;
+}
+
+.menu .section{
+    padding: 2px;
+}
+
+.text-separator::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 15px;
+    right: 15px;
+    height: 0;
+    border: 1px solid #ffffff36;
+    border-radius: 10px;
+}
+
+/* --- */
+
+.welcome {
+    padding-top: 10rem;
+}
+
+.welcome-text {
+    font-weight: 600;
+    font-size: 2.875rem;
+    line-height: 90%;
+}
+
+.name {
+    position: relative;
+    display: inline-block;
+    z-index:0;
+}
+
+.name::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 0;
+    border: 4px solid var(--accent);
+    border-radius : 10px;
+}
+
+#hello-text{
+    font-size: 2.2rem;
 }

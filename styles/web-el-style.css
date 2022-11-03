@@ -1,0 +1,35 @@
+
+@media only screen and (max-width:359px) {
+
+}
+
+@media only screen and (max-width:575px) and (min-width:360px) {
+
+}
+
+@media only screen and (max-width:899px) and (min-width:576px) {
+
+}
+
+@media only screen and (max-width:1249px) and (min-width:900px) {
+
+}
+
+@media only screen and (max-width:1649px) and (min-width:1250px) {
+
+}
+
+@media only screen and (min-width:1650px) {
+
+}
+
+::-webkit-scrollbar{
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background: var(--element);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-track{background: var(--second-background);}

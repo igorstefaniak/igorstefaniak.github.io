@@ -9,24 +9,76 @@
     <meta name="author" content="Igor Stefaniak">
     <meta name="copyright" content="Igor Stefaniak">
     <meta name="theme-color" content="#">
-    <link id="favicon" rel="shortcut icon" href="./images/icons/favicon1.ico" type="image/x-icon">
-    <title>Igor Stefaniak</title>
-    <link href='https://unpkg.com/boxicons@2.1.3/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="http://example.com/favicon.png">
+    <title>Document</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/main-style.css">
+    <link rel="stylesheet" href="./styles/web-el-style.css">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script src="./scripts/icons.js"></script>
+    <script src="./scripts/main.js"></script>
 </head>
 <body>
     <div id="container">
-        <nav>
-            <a href="javascript:bookmarks()" class="">
-                <div>
-                    <i class='bx bxl-javascript'></i>
-                    <i class='bx bxl-javascript'></i>
-                    <i class='bx bxl-javascript'></i>
+        <div class="top-navbar">
+            <div class="left-navbar"></div>
+            <div class="center-navbar items-navbar">
+                <a title="Strona główna" href="./">
+                    <div class="button">
+                        <i id="bookmarks" class="bx bx-home"></i>
+                    </div>
+                </a>
+                <a href="javascript:love()">
+                    <div class="button">
+                        <i id="love" class="bx bx-file"></i>
+                    </div>
+                </a>
+            </div>
+            <div class="right-navbar items-navbar">
+                <div class="dropdown" id="settings">
+                <a href="#">
+                    <div class="button">
+                        <i class="bx bx-cog"></i>
+                    </div>
+                </a>
+                <div class="menu _vanish" id="settings-menu">
+                    <div class="section">
+                        <ul>
+                            <li class="title"><i class="bx bx-accessibility"></i><div tabindex="0">Dostępność</div></li>
+                            <li><a onclick="czcionka()" href="#"><i class="bx bx-font-size"></i><div>Czcionka</div></a></li>
+                            <li><a onclick="kontrast()" href="#"><i class="bx bx bxs-circle-half"></i><div>Kontrast</div></a></li>
+                        </ul>
+                    </div>
+                    <div class="text-separator"></div>
+                    <div class="section">
+                        <ul>
+                            <li class="title"><i class="bx bx-edit"></i><div tabindex="0">Wygląd</div></li>
+                            <li><a onclick="czcionka()" href="#"><i class="bx bx-palette"></i><div>Kolory</div></a></li>
+                            <li><a onclick="kontrast()" href="#"><i class="bx bx bxs-circle-half"></i><div>Tryb Ciemny</div></a></li>
+                        </ul>
+                    </div>
+                    <div class="text-separator"></div>
+                    <div class="section">
+                        <ul>
+                            <li class="title"><i class="bx bx-code"></i><div tabindex="0">Inne</div></li>
+                            <li><a onclick="czcionka()" href="#"><i class="bx bx-info-circle"></i><div>Informacje</div></a></li>
+                        </ul>
+                    </div>
                 </div>
-            </a>
-        </nav>
+            </div>
+        </div>
     </div>
+        <div class="welcome">
+            <div class="welcome-text">
+                <span><span id="hello-text"></span><br>jestem <span class="name">Igor Stefaniak</span></span>
+            </div>
+            <div class="avatar">
+                <img src="./img/avatar.png" alt=""/>
+            </div>
+        </div>
+
+
+    </div>
+<script src="./scripts/welcome.js"></script>
+<script src="./scripts/menu.js"></script>
 </body>
 </html>
