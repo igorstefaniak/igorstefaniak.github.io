@@ -19,7 +19,7 @@
 </head>
 <body>
     <div id="container">
-        <div class="top-navbar">
+        <nav class="top-navbar">
             <div class="left-navbar"></div>
             <div class="center-navbar items-navbar">
                 <a title="Strona główna" href="./">
@@ -27,7 +27,7 @@
                         <i id="bookmarks" class="bx bx-home"></i>
                     </div>
                 </a>
-                <a href="javascript:love()">
+                <a title="aa" href="javascript:love()">
                     <div class="button">
                         <i id="love" class="bx bx-file"></i>
                     </div>
@@ -35,7 +35,7 @@
             </div>
             <div class="right-navbar items-navbar">
                 <div class="dropdown" id="settings">
-                <a href="#">
+                <a title="Ustawienia" href="#">
                     <div class="button">
                         <i class="bx bx-cog"></i>
                     </div>
@@ -66,17 +66,17 @@
                 </div>
             </div>
         </div>
-    </div>
+    </nav>
+    <main>
         <div class="welcome">
             <div class="welcome-text">
-                <span><span id="hello-text"></span><br>jestem <span class="name">Igor Stefaniak</span></span>
+                <h1><span id="hello-text"></span><br>jestem <span class="name">Igor Stefaniak</span></h1>
             </div>
             <div class="avatar">
                 <img src="./img/avatar.png" alt=""/>
             </div>
         </div>
-
-
+    </main>
     </div>
 <script src="./scripts/welcome.js"></script>
 <script src="./scripts/menu.js"></script>
