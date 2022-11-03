@@ -5,7 +5,8 @@
 @media only screen and (max-width:575px) and (min-width:360px) {
   #container {width: 100%;}
   .welcome-text {transform: scale(0.7)!important;}
-  .top-navbar{left:0; right:0;}
+  .top-navbar{left:0; right:0; top: 12px;}
+  .welcome{padding-top: 9rem;}
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {
