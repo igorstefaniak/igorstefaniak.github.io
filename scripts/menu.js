@@ -16,30 +16,53 @@ function getCookie(cookieName) {
     })
     return cookie[cookieName];
 }
-var n = getCookie("font_level_size");
 
-    if(n == undefined){
-        n = 1;
-    }
-    if(n == 1){
-        $("body *").each(function() {
-            $(this).css('font-size', '')
-        });
-    }
-    else if(n == 2){
+
+if(getCookie("font_level_size") == undefined ){
+    var font_level_size = 0;
+    document.cookie = "font_level_size="+0+";path=/";
+}
+else{
+    var font_level_size = parseInt(getCookie("font_level_size"));
+    $("html").css('font-size', parseInt(getCookie("font_level_size")) + parseInt($('html').css('font-size')));
+}
+
+function czcionka(){
+    $("html").css('font-size', 1 + parseInt($('html').css('font-size')));
+    font_level_size++;
+    document.cookie = "font_level_size="+font_level_size+";path=/"
+    console.log(font_level_size, getCookie("font_level_size"));
+}
+
+/*     var font_level_size = parseInt(getCookie("font_level_size"));
+    for (font_level_size>1; font_level_size--;) {
         $("body *").each(function() {
             fontSizeValue = parseInt($(this).css('font-size'));
-            $(this).css('font-size', 2 + fontSizeValue)
+            $(this).css('font-size', font_level_size + fontSizeValue)
         });
     }
-    else if(n == 3){
-        $("body *").each(function() {
-            fontSizeValue = parseInt($(this).css('font-size'));
-            $(this).css('font-size', 3 + fontSizeValue)
-        });
-    }
+    var font_level_size = parseInt(getCookie("font_level_size")) -1;
+}
+console.log(font_level_size, getCookie("font_level_size"));
+
+function czcionka(){
+    $("body *").each(function() {
+        fontSizeValue = parseInt($(this).css('font-size'));
+        $(this).css('font-size', font_level_size + fontSizeValue)
+    });
+    font_level_size++;
+    document.cookie = "font_level_size="+font_level_size+";path=/"
+    console.log(font_level_size, getCookie("font_level_size"));
+} */
 
 
+/* for (font_level_size>1; font_level_size--;) {
+    console.log(font_level_size)
+}
+
+console.log(font_level_size, getCookie("font_level_size"));
+ */
+/* 
 function czcionka(){
         if(n == 3){
             $("body *").each(function() {
@@ -58,7 +81,11 @@ function czcionka(){
         }
         console.log(n);
     }
-/*
+
+
+
+    ------------
+
 var font_level_size = getCookie("font_level_size") != undefined && getCookie("font_level_size") != null ? getCookie("font_level_size") : 0;
 
 $(document).ready(function() {
