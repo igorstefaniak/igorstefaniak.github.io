@@ -8,24 +8,86 @@ $('.menu *').focusout(function () {
     $('#'+a).addClass('_vanish');
 });
 
-var l_z = 1;
-function czcionka() {
-    if(l_z<4){
-        l_z++;
+function getCookie(cookieName) {
+    let cookie = {};
+    document.cookie.split(';').forEach(function(el) {
+      let [key,value] = el.split('=');
+      cookie[key.trim()] = value;
+    })
+    return cookie[cookieName];
+}
+var n = getCookie("font_level_size");
+
+    if(n == undefined){
+        n = 1;
+    }
+    if(n == 1){
+        $("body *").each(function() {
+            $(this).css('font-size', '')
+        });
+    }
+    else if(n == 2){
+        $("body *").each(function() {
+            fontSizeValue = parseInt($(this).css('font-size'));
+            $(this).css('font-size', 2 + fontSizeValue)
+        });
+    }
+    else if(n == 3){
+        $("body *").each(function() {
+            fontSizeValue = parseInt($(this).css('font-size'));
+            $(this).css('font-size', 3 + fontSizeValue)
+        });
+    }
+
+
+function czcionka(){
+        if(n == 3){
+            $("body *").each(function() {
+                $(this).css('font-size', '')
+            });
+            n = 1;
+            document.cookie = "font_level_size="+n+";path=/"
+        }
+        else if(n < 3){
+            $("body *").each(function() {
+                fontSizeValue = parseInt($(this).css('font-size'));
+                $(this).css('font-size', 1 + fontSizeValue)
+            });
+            n++;
+            document.cookie = "font_level_size="+n+";path=/"
+        }
+        console.log(n);
+    }
+/*
+var font_level_size = getCookie("font_level_size") != undefined && getCookie("font_level_size") != null ? getCookie("font_level_size") : 0;
+
+$(document).ready(function() {
+    $("*").each(function() {
+        fontSizeValue = parseInt($(this).css('font-size'));
+        $(this).css('font-size', fontSizeValue + parseInt(font_level_size));
+    });
+});
+function czcionka(){
+    if(font_level_size == 3){
+        font_level_size = 0;
+        document.cookie = "font_level_size="+font_level_size+";path=/";
+        console.log(font_level_size);
+        $("*").each(function() {
+            $(this).css('font-size', '')
+        });
+    }
+    else if(font_level_size<3){
+        font_level_size++;
+        document.cookie = "font_level_size="+font_level_size+";path=/"
+        console.log(font_level_size);
         $("*").each(function() {
             fontSizeValue = parseInt($(this).css('font-size'));
             $(this).css('font-size', 1 + fontSizeValue)
         });
     }
-    else if(l_z=4){
-        l_z = 1;
-        $("*").each(function() {
-            $(this).removeAttr('style');
-        });
-    }
 }
 var l_k = 0;
-function kontrast() {
+function kontrast(){
     if(l_k==0){
         $("*").each(function() {
             $(this).addClass('kontrast');
@@ -38,4 +100,4 @@ function kontrast() {
         });
         l_k--;
     }
-}
+} */
