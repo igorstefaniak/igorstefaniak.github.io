@@ -58,10 +58,9 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    border-radius: 30px 30px 30px 30px;
     padding: 10px 0px;
-    right: 100px;
-    left: 100px;
+    right: 0;
+    left: 0;
     z-index: 100;
 }
 
@@ -113,7 +112,7 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
 
 .menu {
     position: fixed;
-    width: 164px;
+    width: 12rem;
     background: #1d1c21;
     z-index: 100;
     top: 90px;
@@ -140,6 +139,17 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
   align-items: center;
 }
 
+.menu .section ul li .text-separator::after{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 2rem;
+    right: 2rem;
+    height: 0;
+    border: 1px solid #ffffff36;
+    border-radius: 10px;
+}
+
 .menu ul li a:hover{
   transform: scale(1.1);
 }
@@ -150,7 +160,7 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
 
 .menu ul li{
   margin: 0.1rem 0.5rem 0.1rem 0.5rem;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .menu ul{
@@ -166,7 +176,12 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
 }
 
 .menu .title{
+    font-size: 1.1rem;
     font-weight: 800;
+    margin: 0.1rem!important;
+}
+.menu .subtitle{
+    font-size: 1.05rem;
     margin: 0.1rem!important;
 }
 

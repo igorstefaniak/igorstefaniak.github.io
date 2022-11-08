@@ -11,7 +11,7 @@
     <meta name="theme-color" content="#">
     <link rel="icon" href="http://example.com/favicon.png">
     <title>Document</title>
-    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./styles/main-style.css">
     <link rel="stylesheet" href="./styles/web-el-style.css">
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
@@ -43,8 +43,13 @@
                     <div class="section">
                         <ul>
                             <li class="title"><i class="bx bx-accessibility"></i><div tabindex="0">Dostępność</div></li>
-                            <li><a onclick="czcionka()" href="#"><i class="bx bx-font-size"></i><div>Czcionka</div></a></li>
-                            <li><a id="css-norm" href="#"><i class="bx bx bxs-circle-half"></i><div>Kontrast</div></a></li>
+                            <li class="subtitle"><i class="bx bx-font"></i><div tabindex="0">Czcionka</div></li>
+                            <li><div class="text-separator"></div></li>
+                            <li><a onclick="rozmiar_czcionki('+')" href="#"><i class="bx bx-plus"></i><div>Powiększ tekst</div></a></li>
+                            <li><a onclick="rozmiar_czcionki('-')" href="#"><i class="bx bx-minus"></i><div>Pomniejsz tekst</div></a></li>
+                            <li><a onclick="ustaw_kontrast()" href="#"><i class="bx bx bxs-circle-half"></i><div>Wysoki kontrast</div></a></li>
+                            <li><a onclick="podkresl_odnosniki()" href="#"><i class="bx bx bx-link"></i><div>Podkreśl odnośniki</div></a></li>
+                            <li><a onclick="reset()" href="#"><i class="bx bx bx-reset"></i><div>Resetuj</div></a></li>
                         </ul>
                     </div>
                     <div class="text-separator"></div>

@@ -17,23 +17,80 @@ function getCookie(cookieName) {
     return cookie[cookieName];
 }
 
-
-if(getCookie("font_level_size") == undefined ){
-    var font_level_size = 0;
-    document.cookie = "font_level_size="+0+";path=/";
+if(getCookie("poziom_rozmiaru_czcionki") == undefined ){
+    var poziom_rozmiaru_czcionki = 0;
+    document.cookie = "poziom_rozmiaru_czcionki="+0+";path=/";
 }
 else{
-    var font_level_size = parseInt(getCookie("font_level_size"));
-    $("html").css('font-size', parseInt(getCookie("font_level_size")) + parseInt($('html').css('font-size')));
+    var poziom_rozmiaru_czcionki = parseInt(getCookie("poziom_rozmiaru_czcionki"));
+    $("html").css('font-size', parseInt(getCookie("poziom_rozmiaru_czcionki")) + parseInt($('html').css('font-size')));
 }
 
-function czcionka(){
-    $("html").css('font-size', 1 + parseInt($('html').css('font-size')));
-    font_level_size++;
-    document.cookie = "font_level_size="+font_level_size+";path=/"
-    console.log(font_level_size, getCookie("font_level_size"));
+function rozmiar_czcionki(op){
+    if(op == '-'){
+        poziom_rozmiaru_czcionki--;
+    }
+    else{
+        poziom_rozmiaru_czcionki++;
+    }
+    if(poziom_rozmiaru_czcionki > -2 && poziom_rozmiaru_czcionki < 6){
+        $("html").css('font-size', eval($('html').css('font-size').slice(0, -2) + op + '1') );
+        document.cookie = "poziom_rozmiaru_czcionki="+poziom_rozmiaru_czcionki+";path=/"
+        console.log(poziom_rozmiaru_czcionki, getCookie("poziom_rozmiaru_czcionki"));
+    }
+    else{
+        if(op == '-'){
+            poziom_rozmiaru_czcionki++;
+        }
+        else{
+            poziom_rozmiaru_czcionki--;
+        }
+        console.log(poziom_rozmiaru_czcionki, getCookie("poziom_rozmiaru_czcionki"));
+    }
 }
 
+if(getCookie("poziom_kontrast") == undefined ){
+    var poziom_kontrast = 0;
+    document.cookie = "poziom_kontrast="+0+";path=/";
+}
+else{
+    var poziom_kontrast = parseInt(getCookie("poziom_kontrast"));
+    if(poziom_kontrast == 1){
+        $("html *").addClass('kontrast');
+    }
+    else{
+        $("html *").removeClass('kontrast');
+    }
+}
+function ustaw_kontrast(){
+    if(poziom_kontrast==0){
+        $("html *").addClass('kontrast');
+        poziom_kontrast++;
+        document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
+    }
+    else if(poziom_kontrast==1){
+        $("html *").removeClass('kontrast');
+        poziom_kontrast--;
+        document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
+
+    }
+}
+
+if(getCookie("poziom_odnosniki") == undefined ){
+    var poziom_odnosniki = 0;
+    document.cookie = "poziom_odnosniki="+0+";path=/";
+}
+else{
+    var poziom_odnosniki = parseInt(getCookie("poziom_odnosniki"));
+    if(poziom_odnosniki == 1){
+        $("a").css('text-decoration: underline !important;',);
+    }
+    else{
+        $("a").css('',);
+    }
+}
+
+function podkresl_odnosniki(){}
 /*     var font_level_size = parseInt(getCookie("font_level_size"));
     for (font_level_size>1; font_level_size--;) {
         $("body *").each(function() {
