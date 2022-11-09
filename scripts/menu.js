@@ -82,15 +82,52 @@ if(getCookie("poziom_odnosniki") == undefined ){
 }
 else{
     var poziom_odnosniki = parseInt(getCookie("poziom_odnosniki"));
-    if(poziom_odnosniki == 1){
-        $("a").css('text-decoration: underline !important;',);
+    if(poziom_odnosniki==0){
+        $("a").each(function() {
+            $(this).css('text-decoration', '')
+        });
     }
-    else{
-        $("a").css('',);
+    else if(poziom_odnosniki==1){
+        $("a").each(function() {
+            $(this).css('text-decoration', 'underline')
+        });
     }
 }
 
-function podkresl_odnosniki(){}
+function podkresl_odnosniki(){
+    console.log(poziom_odnosniki, getCookie("poziom_odnosniki"));
+    if(poziom_odnosniki == 0){
+        $("a").each(function() {
+            $(this).css('text-decoration', 'underline')
+        });
+        poziom_odnosniki++;
+        document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
+    }
+    else if(poziom_odnosniki == 1){
+        $("a").each(function() {
+            $(this).css('text-decoration', '')
+        });
+        poziom_odnosniki--;
+        document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
+    }
+}
+
+function reset(){
+    var reset = 1;
+    $("html").css('font-size', '' );
+    $("html *").removeClass('kontrast');
+    $("a").each(function() {
+        $(this).css('text-decoration', '')
+    });
+    poziom_odnosniki = 0;
+    document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
+    poziom_kontrast = 0;
+    document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
+    poziom_rozmiaru_czcionki = 0;
+    document.cookie = "poziom_rozmiaru_czcionki="+0+";path=/";
+    
+}
+
 /*     var font_level_size = parseInt(getCookie("font_level_size"));
     for (font_level_size>1; font_level_size--;) {
         $("body *").each(function() {
