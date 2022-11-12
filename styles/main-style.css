@@ -105,6 +105,11 @@ body {
     color: var(--accent);
 }
 
+.left-navbar {
+    scale: 2;
+    display: flex;
+}
+
 a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
     visibility: visible;
     opacity: 1;
@@ -137,6 +142,10 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
   width: -webkit-fill-available;
   transition: all .20s cubic-bezier(0.4, 0, 1, 1);
   align-items: center;
+}
+
+.text-separator{
+    margin: -2px 0 6px 0;
 }
 
 .menu .section ul li .text-separator::after{
@@ -203,7 +212,7 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
 /* --- */
 
 .welcome {
-    padding-top: 10rem;
+    padding-top: 12rem;
 }
 
 .welcome-text {
@@ -242,4 +251,16 @@ h1{
     margin-inline-start: unset;
     margin-inline-end: unset;
     font-weight: unset;
+}
+h3{
+    display: unset;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    margin-inline-start: unset;
+    margin-inline-end: unset;
+    font-weight: unset;
+}
+.work{
+    color: #555558;
+    font-size: 24px;
 }

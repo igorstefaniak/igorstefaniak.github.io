@@ -111,6 +111,34 @@ function podkresl_odnosniki(){
         document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
     }
 }
+if(getCookie("odcienie_szarosci") == undefined ){
+    var odcienie_szarosci = 0;
+    document.cookie = "odcienie_szarosci="+0+";path=/";
+}
+else{
+    var odcienie_szarosci = parseInt(getCookie("odcienie_szarosci"));
+    if(odcienie_szarosci==0){
+        $("html").css('filter', '');
+    }
+    else if(odcienie_szarosci==1){
+        $("html").css('filter', 'grayscale(100%)');
+    }
+}
+
+function ustaw_odcienie_szarosci(){
+    console.log(odcienie_szarosci, getCookie("odcienie_szarosci"));
+    if(odcienie_szarosci == 0){
+        $("html").css('filter', 'grayscale(100%)');
+        odcienie_szarosci++;
+        document.cookie = "odcienie_szarosci="+odcienie_szarosci+";path=/";
+    }
+    else if(odcienie_szarosci == 1){
+        $("html").css('filter', '');
+        odcienie_szarosci--;
+        document.cookie = "odcienie_szarosci="+odcienie_szarosci+";path=/";
+    }
+}
+
 
 function reset(){
     var reset = 1;
@@ -121,10 +149,12 @@ function reset(){
     });
     poziom_odnosniki = 0;
     document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
+    odcienie_szarosci = 0;
+    document.cookie = "odcienie_szarosci="+odcienie_szarosci+";path=/";
     poziom_kontrast = 0;
     document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
     poziom_rozmiaru_czcionki = 0;
-    document.cookie = "poziom_rozmiaru_czcionki="+0+";path=/";
+    document.cookie = "poziom_rozmiaru_czcionki="+poziom_rozmiaru_czcionki+";path=/";
     
 }
 
