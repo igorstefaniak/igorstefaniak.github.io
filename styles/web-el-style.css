@@ -31,11 +31,11 @@
 }
 
 ::-webkit-scrollbar-thumb{
-  background: var(--element);
+  background: var(--dark);
   border-radius: 8px;
 }
 
-::-webkit-scrollbar-track{background: var(--second-background);}
+::-webkit-scrollbar-track{background: var(--dark);}
 
 .kontrast {
   background: #ffff00!important;

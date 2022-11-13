@@ -276,5 +276,22 @@ article .title{
     align-items: center;
     font-size: 1.7rem;
     font-weight: 800;
-    margin: 0.1rem!important;
+    margin: 0.1rem 0.1rem 0.1rem 1rem;
+
+}
+.main{
+    border-radius: 20px;
+    background: #1d1c21;
+    width: -webkit-fill-available;
+    height: 500px;
+    margin: 2rem;
+}
+footer {
+    border-radius: 20px 20px 0 0;
+    background: #1d1c21;
+    width: -webkit-fill-available;
+    height: 150px;
+}
+footer p {
+    display: flex; width: -webkit-fill-available; justify-content: center; align-items: center; 
 }
