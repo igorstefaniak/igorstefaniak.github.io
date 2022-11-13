@@ -163,7 +163,7 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
   transform: scale(1.1);
 }
 
-.menu ul li a i, .menu ul li i{
+.menu ul li a i, .menu ul li i, article .title i{
   margin-right: 6px;
 }
 
@@ -265,4 +265,16 @@ h3{
     font-family: 'Comfortaa', cursive;
     color: #555558;
     font-size: 24px;
+}
+
+article {
+    margin-top: 10rem;
+}
+article .title{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1.7rem;
+    font-weight: 800;
+    margin: 0.1rem!important;
 }
