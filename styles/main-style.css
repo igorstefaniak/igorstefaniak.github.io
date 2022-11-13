@@ -211,8 +211,8 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
 
 /* --- */
 
-.welcome {
-    padding-top: 12rem;
+main {
+    padding-top: 14rem;
 }
 
 .welcome-text {
@@ -261,6 +261,7 @@ h3{
     font-weight: unset;
 }
 .work{
+    font-family: 'Comfortaa', cursive;
     color: #555558;
     font-size: 24px;
 }
