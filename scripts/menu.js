@@ -139,7 +139,6 @@ function ustaw_odcienie_szarosci(){
     }
 }
 
-
 function reset(){
     var reset = 1;
     $("html").css('font-size', '' );
@@ -156,6 +155,34 @@ function reset(){
     poziom_rozmiaru_czcionki = 0;
     document.cookie = "poziom_rozmiaru_czcionki="+poziom_rozmiaru_czcionki+";path=/";
     
+}
+
+if(getCookie("kolor") == undefined ){
+    var kolor = 0;
+    document.cookie = "kolor="+0+";path=/";
+}
+else{
+    var kolor = parseInt(getCookie("kolor"));
+    if(kolor==0){
+        $("html").css('filter', '');
+    }
+    else if(kolor==1){
+        $("html").css('filter', 'grayscale(100%)');
+    }
+}
+
+function zmien_kolor(){
+    console.log(kolor, getCookie("kolor"));
+    if(kolor == 0){
+        document.documentElement.style.setProperty('--accent', '#ec1a1a');
+        kolor++;
+        document.cookie = "kolor="+kolor+";path=/";
+    }
+    else if(kolor == 1){
+        document.documentElement.style.setProperty('--accent', '#1aa7ec');
+        kolor--;
+        document.cookie = "kolor="+kolor+";path=/";
+    }
 }
 
 /*     var font_level_size = parseInt(getCookie("font_level_size"));

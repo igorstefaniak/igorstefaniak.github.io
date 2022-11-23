@@ -8,6 +8,7 @@
   .top-navbar{left:0; right:0; top: 12px;}
   .welcome{padding-top: 9rem;}
   .left-navbar {scale: 1.1;display: flex;}
+  main{padding-top: 0;}
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {

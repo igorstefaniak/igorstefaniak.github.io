@@ -291,6 +291,7 @@ footer {
     background: #1d1c21;
     width: -webkit-fill-available;
     height: 150px;
+    display: flex;
 }
 footer p {
     display: flex; width: -webkit-fill-available; justify-content: center; align-items: center; 
