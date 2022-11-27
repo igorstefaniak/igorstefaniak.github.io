@@ -8,9 +8,8 @@
     --info: #17a2b8;
     --warning: #ffc107;
     --danger: #dc3545;
-    --light: #f8f9fa;
-    --dark: #151418;
     --accent: #1aa7ec;
+    --theme: #151418;
 }
 
 * {
@@ -26,7 +25,7 @@ html {
 
 body {
     margin: 0;
-    background: url("../images/background-pattern.png"), var(--dark);
+    background: url("../images/background-pattern.png"), var(--theme);
 }
 
 ._vanish {
@@ -37,12 +36,12 @@ body {
 #container {
     margin: 0px auto;
     width: 900px;
-    background-color: var(--dark);
+    background-color: var(--theme);
     height: 100%;
 }
 
 :focus-visible {
-    outline: 3px solid var(--light);
+    outline: 3px solid white;
     border-radius: 2px;
   }
 
@@ -296,3 +295,11 @@ footer {
 footer p {
     display: flex; width: -webkit-fill-available; justify-content: center; align-items: center; 
 }
+.kolory{
+        border-radius: 100%;
+        border: #ffffff;
+        border-style: solid;
+        border-width: 2px;
+        height: 16px;
+        width: 16px;
+    }

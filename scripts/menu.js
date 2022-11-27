@@ -163,11 +163,20 @@ if(getCookie("kolor") == undefined ){
 }
 else{
     var kolor = parseInt(getCookie("kolor"));
-    if(kolor==0){
-        $("html").css('filter', '');
+    if(kolor == 0){
+        document.documentElement.style.setProperty('--accent', '#1aa7ec');
     }
-    else if(kolor==1){
-        $("html").css('filter', 'grayscale(100%)');
+    else if(kolor == 1){
+        document.documentElement.style.setProperty('--accent', '#ec1a1a');
+    }
+    else if(kolor == 2){
+        document.documentElement.style.setProperty('--accent', '#e78801');
+    }
+    else if(kolor == 3){
+        document.documentElement.style.setProperty('--accent', '#fd148f');
+    }
+    else if(kolor == 4){
+        document.documentElement.style.setProperty('--accent', '#0DBA64');
     }
 }
 
@@ -179,11 +188,27 @@ function zmien_kolor(){
         document.cookie = "kolor="+kolor+";path=/";
     }
     else if(kolor == 1){
+        document.documentElement.style.setProperty('--accent', '#e78801');
+        kolor++;
+        document.cookie = "kolor="+kolor+";path=/";
+    }
+    else if(kolor == 2){
+        document.documentElement.style.setProperty('--accent', '#fd148f');
+        kolor++;
+        document.cookie = "kolor="+kolor+";path=/";
+    }
+    else if(kolor == 3){
+        document.documentElement.style.setProperty('--accent', '#0DBA64');
+        kolor++;
+        document.cookie = "kolor="+kolor+";path=/";
+    }
+    else{
         document.documentElement.style.setProperty('--accent', '#1aa7ec');
-        kolor--;
+        kolor = 0;
         document.cookie = "kolor="+kolor+";path=/";
     }
 }
+
 
 /*     var font_level_size = parseInt(getCookie("font_level_size"));
     for (font_level_size>1; font_level_size--;) {
