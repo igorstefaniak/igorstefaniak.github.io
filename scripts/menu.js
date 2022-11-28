@@ -158,55 +158,31 @@ function reset(){
 }
 
 if(getCookie("kolor") == undefined ){
-    var kolor = 0;
-    document.cookie = "kolor="+0+";path=/";
+    var kolor = '#1aa7ec';
+    document.cookie = "kolor="+'#1aa7ec'+";path=/";
 }
 else{
-    var kolor = parseInt(getCookie("kolor"));
-    if(kolor == 0){
+    var kolor = getCookie("kolor");
+    if(kolor == '#1aa7ec'){
         document.documentElement.style.setProperty('--accent', '#1aa7ec');
     }
-    else if(kolor == 1){
+    else if(kolor == '#ec1a1a'){
         document.documentElement.style.setProperty('--accent', '#ec1a1a');
     }
-    else if(kolor == 2){
+    else if(kolor == '#e78801'){
         document.documentElement.style.setProperty('--accent', '#e78801');
     }
-    else if(kolor == 3){
+    else if(kolor == '#fd148f'){
         document.documentElement.style.setProperty('--accent', '#fd148f');
     }
-    else if(kolor == 4){
-        document.documentElement.style.setProperty('--accent', '#0DBA64');
+    else if(kolor == '#0dba64'){
+        document.documentElement.style.setProperty('--accent', '#0dba64');
     }
 }
 
-function zmien_kolor(){
-    console.log(kolor, getCookie("kolor"));
-    if(kolor == 0){
-        document.documentElement.style.setProperty('--accent', '#ec1a1a');
-        kolor++;
-        document.cookie = "kolor="+kolor+";path=/";
-    }
-    else if(kolor == 1){
-        document.documentElement.style.setProperty('--accent', '#e78801');
-        kolor++;
-        document.cookie = "kolor="+kolor+";path=/";
-    }
-    else if(kolor == 2){
-        document.documentElement.style.setProperty('--accent', '#fd148f');
-        kolor++;
-        document.cookie = "kolor="+kolor+";path=/";
-    }
-    else if(kolor == 3){
-        document.documentElement.style.setProperty('--accent', '#0DBA64');
-        kolor++;
-        document.cookie = "kolor="+kolor+";path=/";
-    }
-    else{
-        document.documentElement.style.setProperty('--accent', '#1aa7ec');
-        kolor = 0;
-        document.cookie = "kolor="+kolor+";path=/";
-    }
+function zmien_kolor(kolor){
+    document.documentElement.style.setProperty('--accent', kolor);
+    document.cookie = "kolor="+kolor+";path=/";
 }
 
 

@@ -194,6 +194,14 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
     margin-top: 0.2rem!important;
 }
 
+.menu .palette{
+    font-size: 1.05rem;
+    margin: 0.1rem!important;
+    margin-top: 0.3rem!important;
+    margin-bottom: 0.3rem!important;
+}
+
+
 .menu .section{
     padding: 2px;
 }
@@ -302,4 +310,4 @@ footer p {
         border-width: 2px;
         height: 16px;
         width: 16px;
-    }
+}
