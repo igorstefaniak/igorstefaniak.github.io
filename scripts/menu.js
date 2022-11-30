@@ -185,6 +185,25 @@ function zmien_kolor(kolor){
     document.cookie = "kolor="+kolor+";path=/";
 }
 
+if(getCookie("motyw") == undefined ){
+    var kolor = '#151418';
+    document.cookie = "kolor="+'#151418'+";path=/";
+}
+else{
+    var motyw = getCookie("motyw");
+    if(motyw == '#151418'){
+        document.documentElement.style.setProperty('--theme', '#151418');
+    }
+    else if(motyw == '#fff'){
+        document.documentElement.style.setProperty('--theme', '#fff');
+    }
+}
+
+function zmien_motyw(){
+    document.documentElement.style.setProperty('--theme', motyw);
+    document.cookie = "theme="+motyw+";path=/";
+}
+
 
 /*     var font_level_size = parseInt(getCookie("font_level_size"));
     for (font_level_size>1; font_level_size--;) {
