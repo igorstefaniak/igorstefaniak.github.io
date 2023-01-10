@@ -186,116 +186,33 @@ function zmien_kolor(kolor){
 }
 
 if(getCookie("motyw") == undefined ){
-    var kolor = '#151418';
-    document.cookie = "kolor="+'#151418'+";path=/";
+    var motyw = 0;
+    document.cookie = "motyw="+0+";path=/";
 }
 else{
-    var motyw = getCookie("motyw");
-    if(motyw == '#151418'){
-        document.documentElement.style.setProperty('--theme', '#151418');
+    var motyw = parseInt(getCookie("motyw"));
+    if(motyw==1){
+        document.documentElement.style.setProperty('filter', 'invert(1)');
+        document.documentElement.style.setProperty('--filter', '1');
     }
-    else if(motyw == '#fff'){
-        document.documentElement.style.setProperty('--theme', '#fff');
+    else if(motyw==0){
+        document.documentElement.style.setProperty('filter', 'invert(0)');
+        document.documentElement.style.setProperty('--filter', '0');
     }
 }
 
 function zmien_motyw(){
-    document.documentElement.style.setProperty('--theme', motyw);
-    document.cookie = "theme="+motyw+";path=/";
-}
-
-
-/*     var font_level_size = parseInt(getCookie("font_level_size"));
-    for (font_level_size>1; font_level_size--;) {
-        $("body *").each(function() {
-            fontSizeValue = parseInt($(this).css('font-size'));
-            $(this).css('font-size', font_level_size + fontSizeValue)
-        });
+    console.log(motyw, getCookie("motyw"));
+    if(motyw == 0){
+        motyw++;
+        document.cookie = "motyw="+motyw+";path=/";
+        document.documentElement.style.setProperty('filter', 'invert(1)');
+        document.documentElement.style.setProperty('--filter', '1');
     }
-    var font_level_size = parseInt(getCookie("font_level_size")) -1;
-}
-console.log(font_level_size, getCookie("font_level_size"));
-
-function czcionka(){
-    $("body *").each(function() {
-        fontSizeValue = parseInt($(this).css('font-size'));
-        $(this).css('font-size', font_level_size + fontSizeValue)
-    });
-    font_level_size++;
-    document.cookie = "font_level_size="+font_level_size+";path=/"
-    console.log(font_level_size, getCookie("font_level_size"));
-} */
-
-
-/* for (font_level_size>1; font_level_size--;) {
-    console.log(font_level_size)
-}
-
-console.log(font_level_size, getCookie("font_level_size"));
- */
-/* 
-function czcionka(){
-        if(n == 3){
-            $("body *").each(function() {
-                $(this).css('font-size', '')
-            });
-            n = 1;
-            document.cookie = "font_level_size="+n+";path=/"
-        }
-        else if(n < 3){
-            $("body *").each(function() {
-                fontSizeValue = parseInt($(this).css('font-size'));
-                $(this).css('font-size', 1 + fontSizeValue)
-            });
-            n++;
-            document.cookie = "font_level_size="+n+";path=/"
-        }
-        console.log(n);
-    }
-
-
-
-    ------------
-
-var font_level_size = getCookie("font_level_size") != undefined && getCookie("font_level_size") != null ? getCookie("font_level_size") : 0;
-
-$(document).ready(function() {
-    $("*").each(function() {
-        fontSizeValue = parseInt($(this).css('font-size'));
-        $(this).css('font-size', fontSizeValue + parseInt(font_level_size));
-    });
-});
-function czcionka(){
-    if(font_level_size == 3){
-        font_level_size = 0;
-        document.cookie = "font_level_size="+font_level_size+";path=/";
-        console.log(font_level_size);
-        $("*").each(function() {
-            $(this).css('font-size', '')
-        });
-    }
-    else if(font_level_size<3){
-        font_level_size++;
-        document.cookie = "font_level_size="+font_level_size+";path=/"
-        console.log(font_level_size);
-        $("*").each(function() {
-            fontSizeValue = parseInt($(this).css('font-size'));
-            $(this).css('font-size', 1 + fontSizeValue)
-        });
+    else if(motyw == 1){
+        motyw--;
+        document.cookie = "motyw="+motyw+";path=/";
+        document.documentElement.style.setProperty('filter', 'invert(0)');
+        document.documentElement.style.setProperty('--filter', '0');
     }
 }
-var l_k = 0;
-function kontrast(){
-    if(l_k==0){
-        $("*").each(function() {
-            $(this).addClass('kontrast');
-        });
-        l_k++;
-    }
-    else if(l_k==1){
-        $("*").each(function() {
-            $(this).removeClass('kontrast');
-        });
-        l_k--;
-    }
-} */

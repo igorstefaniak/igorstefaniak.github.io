@@ -1,6 +1,6 @@
-const welcome_text = ["Cześć👋", "Witaj👋"];
-const welcome_text_evening = ["Dobry wieczór🌙"];
-const welcome_text_morning = ["Dzień dobry!🌄"];
+const welcome_text = ["Cześć", "Witaj"];
+const welcome_text_evening = ["Dobry wieczór"];
+const welcome_text_morning = ["Dzień dobry!"];
 let hellotext = document.getElementById('hello-text');
 
 const d = new Date();
