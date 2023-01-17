@@ -234,6 +234,12 @@ main {
     line-height: 90%;
 }
 
+.welcome {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
 #name {
     position: relative;
     display: inline-block;
@@ -280,7 +286,7 @@ h3{
 }
 
 article {
-    margin-top: 10rem;
+    margin-top: 9rem;
 }
 article .title{
     display: flex;
@@ -319,4 +325,8 @@ footer p {
 
 #name::after{
     filter: invert(var(--filter))!important;
+}
+
+.avatar img{
+    width: 164px;
 }

@@ -19,3 +19,8 @@ switch (true) {
         hellotext.innerHTML = welcome_text[randomNumber];
         break;
 }
+
+function love(){
+    let heart = document.getElementById('heart');
+    heart.style.color = "#cc0000";
+}
