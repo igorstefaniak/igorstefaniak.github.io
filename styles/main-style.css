@@ -34,7 +34,7 @@ body {
     opacity: 0;
 }
 
-::selection{
+::selection {
     background-color: var(--accent);
 }
 
@@ -48,11 +48,12 @@ body {
 :focus-visible {
     outline: 3px solid white;
     border-radius: 2px;
-  }
+}
 
 :focus-visible .button .bx {
-    color: var(--accent)!important; 
+    color: var(--accent) !important;
 }
+
 /* --- */
 
 .top-navbar {
@@ -68,12 +69,12 @@ body {
     z-index: 100;
 }
 
-.items-navbar{
+.items-navbar {
     align-items: center;
     display: flex;
 }
 
-.dropdown{
+.dropdown {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -89,7 +90,7 @@ body {
     border-radius: 20px;
     transition: all .20s cubic-bezier(0.4, 0, 1, 1);
     text-decoration: none;
-  }
+}
 
 .top-navbar .button i {
     margin: 5px;
@@ -100,11 +101,11 @@ body {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
-.top-navbar .button:hover i{
+.top-navbar .button:hover i {
     color: var(--accent);
 }
 
-.top-navbar .button:hover{
+.top-navbar .button:hover {
     transform: scale(1.2);
     color: var(--accent);
 }
@@ -114,7 +115,8 @@ body {
     display: flex;
 }
 
-a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
+a:focus-visible+#settings-menu,
+.dropdown:hover>#settings-menu {
     visibility: visible;
     opacity: 1;
 }
@@ -129,30 +131,31 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
     transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
 }
 
-.menu li{
+.menu li {
     list-style-type: none;
 }
 
-.menu ul li{
-  display: flex;
-  width: -webkit-fill-available;
-  justify-content: center;
-  align-items: center;
+.menu ul li {
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
 }
 
-.menu ul li a, .text-separator{
-  display: flex;
-  justify-content: center;
-  width: -webkit-fill-available;
-  transition: all .20s cubic-bezier(0.4, 0, 1, 1);
-  align-items: center;
+.menu ul li a,
+.text-separator {
+    display: flex;
+    justify-content: center;
+    width: -webkit-fill-available;
+    transition: all .20s cubic-bezier(0.4, 0, 1, 1);
+    align-items: center;
 }
 
-.text-separator{
+.text-separator {
     margin: -2px 0 6px 0;
 }
 
-.menu .section ul li .text-separator::after{
+.menu .section ul li .text-separator::after {
     content: '';
     position: absolute;
     z-index: -1;
@@ -163,21 +166,23 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
     border-radius: 10px;
 }
 
-.menu ul li a:hover{
-  transform: scale(1.1);
+.menu ul li a:hover {
+    transform: scale(1.1);
 }
 
-.menu ul li a i, .menu ul li i, article .title i{
-  margin-right: 6px;
+.menu ul li a i,
+.menu ul li i,
+article .title i {
+    margin-right: 6px;
 }
 
-.menu ul li{
-  margin: 0.1rem 0.5rem 0.1rem 0.5rem;
-  font-size: 1rem;
+.menu ul li {
+    margin: 0.1rem 0.5rem 0.1rem 0.5rem;
+    font-size: 1rem;
 }
 
-.menu ul{
-  margin: 8px 2px 8px 2px;
+.menu ul {
+    margin: 8px 2px 8px 2px;
 }
 
 .menu ul {
@@ -188,26 +193,27 @@ a:focus-visible + #settings-menu, .dropdown:hover > #settings-menu {
     padding: 0px;
 }
 
-.menu .title{
+.menu .title {
     font-size: 1.150rem;
     font-weight: 800;
-    margin: 0.1rem!important;
+    margin: 0.1rem !important;
 }
-.menu .subtitle{
+
+.menu .subtitle {
     font-size: 1.05rem;
-    margin: 0.1rem!important;
-    margin-top: 0.2rem!important;
+    margin: 0.1rem !important;
+    margin-top: 0.2rem !important;
 }
 
-.menu .palette{
+.menu .palette {
     font-size: 1.05rem;
-    margin: 0.1rem!important;
-    margin-top: 0.3rem!important;
-    margin-bottom: 0.3rem!important;
+    margin: 0.1rem !important;
+    margin-top: 0.3rem !important;
+    margin-bottom: 0.3rem !important;
 }
 
 
-.menu .section{
+.menu .section {
     padding: 2px;
 }
 
@@ -243,7 +249,7 @@ main {
 #name {
     position: relative;
     display: inline-block;
-    z-index:0;
+    z-index: 0;
 }
 
 #name::after {
@@ -255,14 +261,14 @@ main {
     bottom: 0;
     height: 0;
     border: 4px solid var(--accent);
-    border-radius : 10px;
+    border-radius: 10px;
 }
 
-#hello-text{
+#hello-text {
     font-size: 2.2rem;
 }
 
-h1{
+h1 {
     display: unset;
     font-size: unset;
     margin-block-start: unset;
@@ -271,7 +277,8 @@ h1{
     margin-inline-end: unset;
     font-weight: unset;
 }
-h3{
+
+h3 {
     display: unset;
     margin-block-start: unset;
     margin-block-end: unset;
@@ -279,7 +286,8 @@ h3{
     margin-inline-end: unset;
     font-weight: unset;
 }
-.work{
+
+.work {
     font-family: 'Comfortaa', cursive;
     color: #555558;
     font-size: 24px;
@@ -288,7 +296,8 @@ h3{
 article {
     margin-top: 9rem;
 }
-article .title{
+
+article .title {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -297,13 +306,15 @@ article .title{
     margin: 0.1rem 0.1rem 0.1rem 1rem;
 
 }
-.main{
+
+.main {
     border-radius: 20px;
     background: #1d1c21;
     width: -webkit-fill-available;
     height: 500px;
     margin: 2rem;
 }
+
 footer {
     border-radius: 20px 20px 0 0;
     background: #1d1c21;
@@ -311,22 +322,43 @@ footer {
     height: 150px;
     display: flex;
 }
+
 footer p {
-    display: flex; width: -webkit-fill-available; justify-content: center; align-items: center; 
-}
-.kolory{
-        border-radius: 100%;
-        border: #ffffff;
-        border-style: solid;
-        border-width: 2px;
-        height: 16px;
-        width: 16px;
+    display: flex;
+    width: -webkit-fill-available;
+    justify-content: center;
+    align-items: center;
 }
 
-#name::after{
-    filter: invert(var(--filter))!important;
+.kolory {
+    border-radius: 100%;
+    border: #ffffff;
+    border-style: solid;
+    border-width: 2px;
+    height: 16px;
+    width: 16px;
 }
 
-.avatar img{
+#name::after {
+    filter: invert(var(--filter)) !important;
+}
+
+.avatar img {
     width: 164px;
+}
+
+.swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 0 130px;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+    background: var(--accent);
+}
+
+.swiper-horizontal .swiper-pagination-bullets .swiper-pagination-horizontal {
+    bottom: 56px;
 }
