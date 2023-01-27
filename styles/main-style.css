@@ -346,6 +346,9 @@ footer p {
 .avatar img {
     width: 164px;
 }
+.swiper{
+    height: inherit;
+}
 
 .swiper-slide {
     display: flex;

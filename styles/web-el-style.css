@@ -4,11 +4,15 @@
 
 @media only screen and (max-width:575px) and (min-width:360px) {
   #container {width: 100%;}
-  .welcome-text {transform: scale(0.7)!important;}
+  .welcome-text {transform: scale(0.7)!important; text-align: center;}
   .top-navbar{left:0; right:0; top: 12px;}
   .welcome{padding-top: 9rem;}
   .left-navbar {scale: 1.1;display: flex;}
   main{padding-top: 0;}
+  .avatar{display: none;}
+  #settings-menu{
+    right: 10px;
+  }
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {
