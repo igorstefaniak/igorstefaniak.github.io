@@ -164,7 +164,7 @@ if(getCookie("kolor") == undefined ){
 else{
     var kolor = getCookie("kolor");
     if(kolor == '#1aa7ec'){
-        document.documentElement.style.setProperty('--accent', '#1aa7ec');
+        document.documentElement.style.setProperty('--accent', 'var(--accent-blue)');
     }
     else if(kolor == '#ec1a1a'){
         document.documentElement.style.setProperty('--accent', '#ec1a1a');
@@ -192,11 +192,11 @@ if(getCookie("motyw") == undefined ){
 else{
     var motyw = parseInt(getCookie("motyw"));
     if(motyw==1){
-        document.documentElement.style.setProperty('filter', 'invert(1)');
+        $('html, img').css('filter','invert(1)')
         document.documentElement.style.setProperty('--filter', '1');
     }
     else if(motyw==0){
-        document.documentElement.style.setProperty('filter', 'invert(0)');
+        $('html, img').css('filter','invert(0)')
         document.documentElement.style.setProperty('--filter', '0');
     }
 }
@@ -206,13 +206,13 @@ function zmien_motyw(){
     if(motyw == 0){
         motyw++;
         document.cookie = "motyw="+motyw+";path=/";
-        document.documentElement.style.setProperty('filter', 'invert(1)');
-        document.documentElement.style.setProperty('--filter', '1');
+        $('html, img').css('filter','invert(1)')
     }
     else if(motyw == 1){
         motyw--;
         document.cookie = "motyw="+motyw+";path=/";
-        document.documentElement.style.setProperty('filter', 'invert(0)');
-        document.documentElement.style.setProperty('--filter', '0');
+        $('html, img').css('filter','invert(0)')
+
     }
 }
+

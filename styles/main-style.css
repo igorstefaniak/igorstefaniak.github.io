@@ -10,7 +10,7 @@
     --danger: #dc3545;
     --accent: #1aa7ec;
     --theme: hsl(255, 9%, 9%);
-    --filter: 0;
+    --accent-blue: #1aa7ec;
 }
 
 * {
@@ -27,6 +27,7 @@ html {
 body {
     margin: 0;
     background: url("../images/background-pattern.png"), var(--theme);
+    transition: ease-in-out 0.2s;
 }
 
 ._vanish {
@@ -67,6 +68,7 @@ body {
     right: 0;
     left: 0;
     z-index: 100;
+    transition: ease-in-out 0.3s;
 }
 
 .items-navbar {
@@ -339,9 +341,6 @@ footer p {
     width: 16px;
 }
 
-#name::after {
-    filter: invert(var(--filter)) !important;
-}
 
 .avatar img {
     width: 164px;
