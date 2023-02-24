@@ -126,7 +126,7 @@ a:focus-visible+#settings-menu,
 .menu {
     position: fixed;
     width: 12rem;
-    background: #1d1c21;
+    background: #252429;
     z-index: 100;
     top: 90px;
     border-radius: 23px;
