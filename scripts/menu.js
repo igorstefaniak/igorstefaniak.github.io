@@ -183,11 +183,13 @@ else{
         document.documentElement.style.setProperty('--accent', '#0dba64');
         $('meta[name=theme-color]').attr('content', '#0dba64');
     }
+    
 }
 
 function zmien_kolor(kolor){
     document.documentElement.style.setProperty('--accent', kolor);
     document.cookie = "kolor="+kolor+";path=/";
+    location.reload();
 }
 
 if(getCookie("motyw") == undefined ){
