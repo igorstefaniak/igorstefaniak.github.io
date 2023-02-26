@@ -9,8 +9,10 @@
     --warning: #ffc107;
     --danger: #dc3545;
     --accent: #1aa7ec;
+    accent-color: var(--accent);
     --theme: hsl(255, 9%, 9%);
     --accent-blue: #1aa7ec;
+    
 }
 
 * {
