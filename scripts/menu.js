@@ -164,19 +164,24 @@ if(getCookie("kolor") == undefined ){
 else{
     var kolor = getCookie("kolor");
     if(kolor == '#1aa7ec'){
-        document.documentElement.style.setProperty('--accent', 'var(--accent-blue)');
+        document.documentElement.style.setProperty('--accent', '#1aa7ec');
+        $('meta[name=theme-color]').attr('content', '#1aa7ec');
     }
     else if(kolor == '#ec1a1a'){
         document.documentElement.style.setProperty('--accent', '#ec1a1a');
+        $('meta[name=theme-color]').attr('content', '#ec1a1a');
     }
     else if(kolor == '#e78801'){
         document.documentElement.style.setProperty('--accent', '#e78801');
+        $('meta[name=theme-color]').attr('content', '#e78801');
     }
     else if(kolor == '#fd148f'){
         document.documentElement.style.setProperty('--accent', '#fd148f');
+        $('meta[name=theme-color]').attr('content', '#fd148f');
     }
     else if(kolor == '#0dba64'){
         document.documentElement.style.setProperty('--accent', '#0dba64');
+        $('meta[name=theme-color]').attr('content', '#0dba64');
     }
 }
 
