@@ -76,7 +76,7 @@ function ustaw_kontrast(){
     }
 }
 
-if(getCookie("poziom_odnosniki") == undefined ){
+if(getCookie("poziom_odnosniki") == undefined){
     var poziom_odnosniki = 0;
     document.cookie = "poziom_odnosniki="+0+";path=/";
 }
