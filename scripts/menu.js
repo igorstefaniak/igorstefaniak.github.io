@@ -160,6 +160,7 @@ function reset(){
 if(getCookie("kolor") == undefined ){
     var kolor = '#1aa7ec';
     document.cookie = "kolor="+'#1aa7ec'+";path=/";
+    $('meta[name=theme-color]').attr('content', '#1aa7ec');
 }
 else{
     var kolor = getCookie("kolor");
