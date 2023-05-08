@@ -8,6 +8,14 @@ $('.menu *').focusout(function () {
     $('#'+a).addClass('_vanish');
 });
 
+$('.menu *').mouseenter(function () {
+    $('a[title="Ustawienia"] .button').css("color", "var(--accent)")
+});
+
+$('.menu *').mouseleave(function () {
+    $('a[title="Ustawienia"] .button').css("color", "")
+});
+
 function getCookie(cookieName) {
     let cookie = {};
     document.cookie.split(';').forEach(function(el) {
