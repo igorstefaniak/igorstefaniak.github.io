@@ -14,14 +14,14 @@
     left: 6px;
     right: 6px;
     top: 12px;
-    width: unset!important;
+    width: unset !important;
     background-color: #252429;
-border-radius: 20px;
+    border-radius: 20px;
   }
 
   article {
     margin-top: 5rem;
-}
+  }
 
   .welcome {
     padding-top: 9rem;
@@ -50,7 +50,7 @@ border-radius: 20px;
     left: 6px;
     right: 6px;
     top: 12px;
-    width: unset!important;
+    width: unset !important;
   }
 }
 
@@ -59,7 +59,7 @@ border-radius: 20px;
     left: 6px;
     right: 6px;
     top: 12px;
-    width: unset!important;
+    width: unset !important;
   }
 }
 
@@ -113,11 +113,11 @@ border-radius: 20px;
   animation: move-wheel 1s linear infinite;
 }
 
-._menu-darker{
-background-color: #252429;
-margin: 0px auto;
-width: 1000px;
-border-radius: 20px;
+._menu-darker {
+  background-color: #252429;
+  margin: 0px auto;
+  width: 1000px;
+  border-radius: 20px;
 }
 
 @keyframes move-wheel {
