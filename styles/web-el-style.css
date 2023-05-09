@@ -15,7 +15,13 @@
     right: 6px;
     top: 12px;
     width: unset!important;
+    background-color: #252429;
+border-radius: 20px;
   }
+
+  article {
+    margin-top: 5rem;
+}
 
   .welcome {
     padding-top: 9rem;

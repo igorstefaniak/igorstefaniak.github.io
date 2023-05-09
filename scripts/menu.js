@@ -175,22 +175,27 @@ else{
     if(kolor == '#1aa7ec'){
         document.documentElement.style.setProperty('--accent', '#1aa7ec');
         $('meta[name=theme-color]').attr('content', '#1aa7ec');
+        $('#favicon').attr('href', './images/favicons/favicon-blue.svg');
     }
     else if(kolor == '#ec1a1a'){
         document.documentElement.style.setProperty('--accent', '#ec1a1a');
         $('meta[name=theme-color]').attr('content', '#ec1a1a');
+        $('#favicon').attr('href', './images/favicons/favicon-red.svg');
     }
     else if(kolor == '#e78801'){
         document.documentElement.style.setProperty('--accent', '#e78801');
         $('meta[name=theme-color]').attr('content', '#e78801');
+        $('#favicon').attr('href', './images/favicons/favicon-yellow.svg');
     }
     else if(kolor == '#fd148f'){
         document.documentElement.style.setProperty('--accent', '#fd148f');
         $('meta[name=theme-color]').attr('content', '#fd148f');
+        $('#favicon').attr('href', './images/favicons/favicon-pink.svg');
     }
     else if(kolor == '#0dba64'){
         document.documentElement.style.setProperty('--accent', '#0dba64');
         $('meta[name=theme-color]').attr('content', '#0dba64');
+        $('#favicon').attr('href', './images/favicons/favicon-green.svg');
     }
     
 }
