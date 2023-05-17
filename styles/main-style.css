@@ -365,3 +365,8 @@ footer p {
 .swiper-horizontal .swiper-pagination-bullets .swiper-pagination-horizontal {
     bottom: 56px;
 }
+
+.swiper-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
