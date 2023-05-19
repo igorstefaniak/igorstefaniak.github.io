@@ -1,4 +1,14 @@
-### Cześć Wszystkim 👋
+# Witaj na mojej stronie głównej!
+
+Cześć! Trafiłeś raczej na kod źródłowy tej strony, ale oczywiście życzę miłej zabawy! Usprawniam w dalszym ciągu wygląd, udogodnienia i dostępność dla wszystkich.  
+
+## Wygląd i responsywność
+
+Strona ma na ten moment tylko tryb ciemny, a tryb jasny jest w rozwoju. Można zmienić kolor akcentu strony. Strona jest responsywna i działa na urządzeniach mobilnych. 
+
+## Dostępność
+
+Strona jest przygotowana pod dostępność cyfrową, aby każdy mógł z niej korzystać! Wbudowałem pomniejszanie i powiększanie czcionki, odcienie szarości, wysoki kontrast, oraz dodatkowe podkreślenie linków.
 
 <!--
 **igorstefaniak/igorstefaniak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
