@@ -140,6 +140,7 @@ a:focus-visible+#settings-menu,
 .menu ul li {
     display: flex;
     width: -webkit-fill-available;
+    width: -moz-available;
     justify-content: center;
     align-items: center;
 }
@@ -149,6 +150,7 @@ a:focus-visible+#settings-menu,
     display: flex;
     justify-content: center;
     width: -webkit-fill-available;
+    width: -moz-available;
     transition: all .20s cubic-bezier(0.4, 0, 1, 1);
     align-items: center;
 }
@@ -313,6 +315,7 @@ article .title {
     border-radius: 20px;
     background: #1d1c21;
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 500px;
     margin: 2rem;
 }
@@ -321,6 +324,7 @@ footer {
     border-radius: 20px 20px 0 0;
     background: #1d1c21;
     width: -webkit-fill-available;
+    width: -moz-available;
     height: 150px;
     display: flex;
 }
@@ -328,6 +332,7 @@ footer {
 footer p {
     display: flex;
     width: -webkit-fill-available;
+    width: -moz-available;
     justify-content: center;
     align-items: center;
 }
