@@ -64,6 +64,7 @@ body {
     place-content: center;
     height: 100svh;
     width: -webkit-fill-available; 
+    width: -moz-available;
     background: var(--theme);
     z-index: 10000;
     position:absolute;
