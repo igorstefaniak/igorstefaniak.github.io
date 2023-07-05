@@ -1,6 +1,18 @@
 @media only screen and (max-width:359px) {}
 
 @media only screen and (max-width:575px) and (min-width:360px) {
+  #splash svg {
+    width: -webkit-fill-available;
+  }
+
+  #splash svg:nth-child(1) {
+    display: none;
+  }
+
+  #splash svg:nth-child(2){
+    display:block;
+  }
+
   #container {
     width: 100%;
   }
