@@ -1,6 +1,9 @@
-
-$('#container').css( "display", "none" );
 $("#container").ready(function(){
-    $("#splash").css("display", "none");
-    $('#container').css( "display", "block" );
+    setTimeout( function() {
+        $("#splash").css("opacity", "0");
+        $('#container').css( "display", "block" );
+    }, 500);
+    setTimeout( function() {
+        $("#splash").css("display", "none");
+    }, 850);
 });
