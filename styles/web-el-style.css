@@ -58,11 +58,63 @@
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {
+  #splash svg {
+    width: -webkit-fill-available;
+  }
+
+  #splash svg:nth-child(1) {
+    display: none;
+  }
+
+  #splash svg:nth-child(2){
+    display:block;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  .welcome-text {
+    transform: scale(0.7) !important;
+    text-align: center;
+  }
+
   .top-navbar {
     left: 6px;
     right: 6px;
     top: 12px;
     width: unset !important;
+    background-color: #252429;
+    border-radius: 20px;
+  }
+
+  article {
+    margin-top: 5rem;
+  }
+
+  .welcome {
+    padding-top: 9rem;
+  }
+
+  .left-navbar {
+    scale: 1.1;
+    display: flex;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  #settings-menu {
+    right: 10px;
+  }
+
+  #container{
+    width: unset;
   }
 }
 
