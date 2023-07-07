@@ -9,11 +9,11 @@ $('.menu *').focusout(function () {
 });
 
 $('.menu *').mouseenter(function () {
-    $('a[title="Ustawienia"] .button').css("color", "var(--accent)")
+    $('a[title="Ustawienia"] .button *').css("stroke", "var(--accent)")
 });
 
 $('.menu *').mouseleave(function () {
-    $('a[title="Ustawienia"] .button').css("color", "")
+    $('a[title="Ustawienia"] .button *').css("stroke", "")
 });
 
 function getCookie(cookieName) {

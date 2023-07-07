@@ -52,8 +52,8 @@ body {
     border-radius: 2px;
 }
 
-:focus-visible .button .bx {
-    color: var(--accent) !important;
+:focus-visible .button * {
+    stroke: var(--accent) !important;
 }
 
 /* --- */
@@ -163,22 +163,18 @@ body {
     text-decoration: none;
 }
 
-.top-navbar .button i {
-    margin: 5px;
-    font-size: 1.875rem;
-    pointer-events: visible;
-    cursor: pointer;
-    background: transparent;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+.top-navbar .button svg {
+    width: 32px!important;
+    height: 32px!important;
 }
 
-.top-navbar .button:hover i {
-    color: var(--accent);
+.top-navbar .button *{
+    transition: stroke .20s cubic-bezier(0.4, 0, 1, 1);
 }
 
-.top-navbar .button:hover {
-    transform: scale(1.2);
-    color: var(--accent);
+
+.top-navbar .button:hover *{
+    stroke: var(--accent);
 }
 
 .left-navbar {
