@@ -10,7 +10,10 @@
     --danger: #dc3545;
     --accent: #1aa7ec;
     accent-color: var(--accent);
-    --theme: hsl(255, 9%, 9%);
+    --b-1: 22, 21, 25;
+    --b-2: a;
+    --b-3: a;
+    --b-4: a;
 }
 
 * {
@@ -26,7 +29,7 @@ html {
 
 body {
     margin: 0;
-    background: url("../images/background-pattern.png"), var(--theme);
+    background: url("../images/background-pattern.png"), rgb(var(--b-1));
     transition: ease-in-out 0.2s;
 }
 
@@ -42,7 +45,7 @@ body {
 #container {
     margin: 0px auto;
     width: 900px;
-    background-color: var(--theme);
+    background-color: rgb(var(--b-1));
     height: 100%;
     display: none;
 }
@@ -65,7 +68,7 @@ body {
     height: 100svh;
     width: -webkit-fill-available; 
     width: -moz-available;
-    background: var(--theme);
+    background: rgb(var(--b-1));
     z-index: 10000;
     position:absolute;
     transition: opacity 0.3s, visibility 0.3s;
