@@ -456,4 +456,5 @@ footer p {
     padding: 15px;
     transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
     font-family: 'Chillax-Regular';
+font-weight: 600;
   }
