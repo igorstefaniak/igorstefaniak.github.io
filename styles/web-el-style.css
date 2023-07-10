@@ -131,8 +131,9 @@
 
 @media only screen and (min-width:1650px) {}
 
-::-webkit-scrollbar {
-  width: 8px;
+ ::-webkit-scrollbar {
+  width: 0px;
+  transition: all .25s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 ::-webkit-scrollbar-thumb {

@@ -186,7 +186,8 @@
                     <h2><span class="work">Junior Frontend Developer</span></h2>
                 </div>
                 <div class="avatar">
-                    <img src="./images/avatar.png" alt="avatar" />
+<!--                     <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.381/build/spline-viewer.js"></script>
+                    <spline-viewer id="fo" hint loading-anim url="https://prod.spline.design/pYNzriqCP-fX1F8v/scene.splinecode"></spline-viewer> -->
                 </div>
             </div>
             <article>
@@ -226,6 +227,20 @@
             </article>
         </main>
         <footer>
+            <span class="social-media-buttons">
+                <span class="social-media-button">
+                    <div id="facebook-icon-button"></div>
+                </span>
+                <span class="social-media-button">
+                    <div id="instagram-icon-button"></div>
+                </span>
+                <span class="social-media-button">
+                    <div id="youtube-icon-button"></div>
+                </span>
+                <span class="social-media-button">
+                    <div id="twitter-icon-button"></div>
+                </span>
+            </span>
             <p>&copy; <span>
                     <script>document.write('\u00A0' + /\d{4}/.exec(Date())[0] + '\u00A0')</script>
                 </span> Igor Stefaniak. Zrobione z
@@ -242,6 +257,25 @@
     <script src="./scripts/swiper.js"></script>
     <script src="./scripts/scrollable.js"></script>
     <script src="./scripts/status.js"></script>
+    <script>
+// Sprawdza, czy element o podanym id istnieje
+function checkElementExists() {
+  const element = $("#fo")[0]._logo
+  if (element) {
+    console.log('Nowy element o id "logo" został znaleziony w znaczniku "spline-viewer"');
+    $("#fo")[0]._logo.style.display = "none";
+    // Tutaj możesz wykonać odpowiednie działania dla nowo dodanego elementu
+  } else {
+    console.log('Element o id "logo" w znaczniku "spline-viewer" nie został jeszcze dodany');
+  }
+}
+
+// Uruchamia sprawdzanie co 1 sekundę
+setInterval(checkElementExists, 1000);
+
+/*     $("#fo")[0]._logo.style.display = "none"; */
+
+    </script>
 </body>
 
 </html>
