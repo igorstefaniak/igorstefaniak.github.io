@@ -63,6 +63,7 @@ body {
 
 :focus-visible .button * {
     stroke: var(--accent) !important;
+    stroke-width: 2.5px;
 }
 
 /* --- */
@@ -174,12 +175,12 @@ body {
 }
 
 .top-navbar .button svg {
-    width: 32px!important;
-    height: 32px!important;
+    width:40px!important;
 }
 
 .top-navbar .button *{
     transition: stroke .20s cubic-bezier(0.4, 0, 1, 1);
+    stroke-width: 2.5px;
 }
 
 
