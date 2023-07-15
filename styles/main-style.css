@@ -34,7 +34,7 @@ html {
 
 body {
     margin: 0;
-    background: url("../images/background-pattern.png"), rgb(var(--b-1));
+    background-color: rgb(var(--b-1));
 	transition: color 0.3s;
     scrollbar-width: none;
 }
@@ -51,7 +51,6 @@ body {
 #container {
     margin: 0px auto;
     width: 900px;
-    background-color: rgb(var(--b-1));
     height: 100%;
     display: none;
 }
@@ -519,3 +518,87 @@ footer p {
     background-color: var(--twitter);
 }
 
+background {
+
+}
+
+background img {
+    width: 68px;
+    position: fixed;
+    z-index: -1;
+    transition: 0.3s;
+    fill: #1877f2;
+}
+
+
+background img:nth-child(1) {
+    width: 200px;
+    top: -50px;
+    left: 20px;
+}
+
+background img:nth-child(2) {
+    width: 400px;
+    left: 400px;
+    top: 200px;
+}
+
+background img:nth-child(3) {
+    width: 68px;
+    left: 60px;
+    top: 600px;
+}
+
+background img:nth-child(4) {
+    width: 250px;
+    left: 1100px;
+    top: 100px;
+}
+
+background img:nth-child(5) {
+    width: 100px;
+    left: 1500px;
+    top: 470px;
+}
+
+background img:nth-child(6) {
+    width: 100px;
+    left: 1000px;
+    top: 800px;
+}
+
+background img:nth-child(7) {
+    width: 60px;
+    left: 1800px;
+    top: 200px;
+}
+
+background img:nth-child(8) {
+    width: 250px;
+    left: 1600px;
+    top: 650px;
+}
+
+background img:nth-child(9) {
+    width: 250px;
+    left: 150px;
+    top: 870px;
+}
+
+background img:nth-child(10) {
+    width: 50px;
+    left: 150px;
+    top: -200px;
+}
+
+background img:nth-child(11) {
+    width: 140px;
+    left: 1200px;
+    top: -200px;
+}
+
+background img:nth-child(12) {
+    width: 130px;
+    left: 1600px;
+    top: -100px;
+}

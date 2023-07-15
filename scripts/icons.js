@@ -10,17 +10,22 @@ let youtube = document.querySelector('#youtube-icon-button');
 
 function a (cn) {
 
-    let name = String(cn.id).substring(0, String(cn.id).indexOf("-"))
+    let name = cn.id.split("-")[0]
 
-    let animationMenu = bodymovin.loadAnimation({
-        container: cn,
-        renderer: 'svg',
-        loop: false,
-        autoplay: false,
-        path: "./icons/"+name+".json"
-});
+    let animationMenu;
+    try {
+        animationMenu = bodymovin.loadAnimation({
+            container: cn,
+            renderer: 'svg',
+            loop: false,
+            autoplay: false,
+            path: `./icons/${name}.json`
+        });
+    } catch (error) {
+        console.error('Error loading animation:', error);
+    }
 
-var directionMenu = 1;
+const directionMenu = 1;
 
 $(cn).mouseenter(function () { 
     animationMenu.setDirection(directionMenu);
