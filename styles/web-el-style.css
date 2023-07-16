@@ -13,6 +13,14 @@
     display:block;
   }
 
+  .left-navbar svg:nth-child(1) {
+    display: none;
+  }
+
+  .left-navbar svg:nth-child(2){
+    display:block;
+  }
+
   #container {
     width: 100%;
   }

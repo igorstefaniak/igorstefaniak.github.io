@@ -111,6 +111,10 @@ body {
   #splash svg:nth-child(2){
     display: none;
   }
+
+  .left-navbar svg:nth-child(2){
+    display: none;
+  }
   
   @keyframes borealisBar {
     0% {
@@ -329,6 +333,11 @@ main {
     position: relative;
     display: inline-block;
     z-index: 0;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
 }
 
 #name::after {
@@ -598,7 +607,62 @@ background img:nth-child(11) {
 }
 
 background img:nth-child(12) {
-    width: 130px;
+    width: 100px;
     left: 1600px;
-    top: -100px;
+    top: -50px;
 }
+
+#projekty {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+}
+
+#projekty:after{
+
+ content: "";
+ position: absolute;
+ display: block;
+ z-index: -1;
+ width: -webkit-fill-available;
+ height: 6px;
+ left: 0;
+ bottom: 0;
+ background-color: var(--accent);
+ transform: scaleX(0);
+ transform-origin: top left;
+ transition: transform 0.3s ease;
+ border-radius: 10px;
+}
+
+#projekty:hover:after {
+    transform: scaleX(1);
+    /*  border: 3px solid var(--accent);  */
+}
+
+.particles {
+    z-index: 0;
+  }
+  
+  .particles > .particle {
+    /* border-radius: 100%; */
+    background: transparent;
+    opacity: 0;
+  
+    position: absolute;
+  
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  
+    height: 15px;
+    width: 15px;
+    top: 30px;
+    left: 10rem;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+
+nav a, footer a {
+    -webkit-tap-highlight-color: transparent;
+} 
