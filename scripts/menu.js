@@ -9,7 +9,7 @@ $('.menu *').focusout(function () {
 });
 
 $('.menu *').mouseenter(function () {
-    $('a[title="Ustawienia"] .button *').css("stroke", "var(--accent)")
+    $('a[title="Ustawienia"] .button *').css("stroke", "rgb(var(--accent))")
 });
 
 $('.menu *').mouseleave(function () {
@@ -166,34 +166,34 @@ function reset(){
 }
 
 if(getCookie("kolor") == undefined ){
-    var kolor = '#1aa7ec';
-    document.cookie = "kolor="+'#1aa7ec'+";path=/";
+    var kolor = '26, 167, 236';
+    document.cookie = "kolor="+'26, 167, 236'+";path=/";
     $('meta[name=theme-color]').attr('content', '#1aa7ec');
 }
 else{
     var kolor = getCookie("kolor");
-    if(kolor == '#1aa7ec'){
-        document.documentElement.style.setProperty('--accent', '#1aa7ec');
+    if(kolor == '26, 167, 236'){
+        document.documentElement.style.setProperty('--accent', '26, 167, 236');
         $('meta[name=theme-color]').attr('content', '#1aa7ec');
         $('#favicon').attr('href', './images/favicons/favicon-blue.svg');
     }
-    else if(kolor == '#ec1a1a'){
-        document.documentElement.style.setProperty('--accent', '#ec1a1a');
+    else if(kolor == '236, 26, 26'){
+        document.documentElement.style.setProperty('--accent', '236, 26, 26');
         $('meta[name=theme-color]').attr('content', '#ec1a1a');
         $('#favicon').attr('href', './images/favicons/favicon-red.svg');
     }
-    else if(kolor == '#e78801'){
-        document.documentElement.style.setProperty('--accent', '#e78801');
+    else if(kolor == '231, 136, 1'){
+        document.documentElement.style.setProperty('--accent', '231, 136, 1');
         $('meta[name=theme-color]').attr('content', '#e78801');
         $('#favicon').attr('href', './images/favicons/favicon-yellow.svg');
     }
-    else if(kolor == '#fd148f'){
-        document.documentElement.style.setProperty('--accent', '#fd148f');
+    else if(kolor == '253, 20, 143'){
+        document.documentElement.style.setProperty('--accent', '253, 20, 143');
         $('meta[name=theme-color]').attr('content', '#fd148f');
         $('#favicon').attr('href', './images/favicons/favicon-pink.svg');
     }
-    else if(kolor == '#0dba64'){
-        document.documentElement.style.setProperty('--accent', '#0dba64');
+    else if(kolor == '13, 186, 100'){
+        document.documentElement.style.setProperty('--accent', '13, 186, 100');
         $('meta[name=theme-color]').attr('content', '#0dba64');
         $('#favicon').attr('href', './images/favicons/favicon-green.svg');
     }

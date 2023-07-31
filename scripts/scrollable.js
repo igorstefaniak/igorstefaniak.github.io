@@ -23,7 +23,6 @@ const handleScroll = (event) => {
   
     
     images.forEach((element) => {
-      console.log(scrollPosition)
       if (element.getAttribute("src") == "./images/background/circle_quarter.svg"){
         element.style.transform = `translate(0, ${scrollPosition / 10}px) rotate(${- scrollPosition / 10}deg) `;
       }

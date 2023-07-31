@@ -97,9 +97,3 @@ btn.addEventListener("mouseup", () => {
     createParticle();
   }
 });
-
-gsap.to(btn, {
-  scaleX: 1,
-  duration: 1,
-  ease: "elastic.out(1, 0.3)"
-});

@@ -63,6 +63,22 @@
   #settings-menu {
     right: 10px;
   }
+
+  .swiper-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-container .text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: unset;
+    gap: 6px;
+  }
+  .text-section .button {
+  margin: unset;
+  margin-top: 12px;
+  }
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {
@@ -123,6 +139,21 @@
 
   #container{
     width: unset;
+  }
+  .swiper-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-container .text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: unset;
+    gap: 6px;
+  }
+  .text-section .button {
+  margin: unset;
+  margin-top: 12px;
   }
 }
 
