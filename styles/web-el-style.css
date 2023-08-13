@@ -155,6 +155,7 @@
   margin: unset;
   margin-top: 12px;
   }
+
 }
 
 @media only screen and (max-width:1249px) and (min-width:900px) {
@@ -164,6 +165,7 @@
     top: 12px;
     width: unset !important;
   }
+  .swiper-slide .image {width: 50%;}
 }
 
 @media only screen and (max-width:1649px) and (min-width:1250px) {}

@@ -486,18 +486,16 @@ footer p {
 .social-media-button {
     width: 48px;
     height: 48px;
-    border-radius: 25%;
-    outline: 2px solid white;
+    border-radius: 100%;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: background 0.3s;
     display: grid;
     place-items: center;
 }
 
 .social-media-button:hover {
-    outline-offset: 3px;
-    transition: all 0.3s;
-}
+    outline: 2px solid white;
+} 
 
 .social-media-button div {
     transition: all 0.3s;
@@ -514,7 +512,7 @@ footer p {
 .social-media-button:nth-child(1) {
     background: rgb(25,175,255);
     background: linear-gradient(180deg, rgba(25,175,255, var(--opacity)) 0%, rgba(24,119,242,var(--opacity)) 100%);   
-    transition: --opacity .3s, all 0.3s; 
+    transition: --opacity .3s, background 0.3s; 
 }
 
 .social-media-button:hover:nth-child(1), .social-media-button:hover:nth-child(2) {
@@ -527,7 +525,7 @@ footer p {
         rgba(253, 244, 151,var(--opacity)) 5%, rgba(253, 89, 73,var(--opacity)) 45%,
         rgba(214, 36, 159,var(--opacity)) 60%,rgba(40, 90, 235,var(--opacity)) 90%
     ); 
-    transition: --opacity .3s, all 0.3s; 
+    transition: --opacity .3s, background 0.3s; 
 }
 
 .social-media-button:hover:nth-child(3) {
@@ -671,7 +669,7 @@ nav a, footer a, .title a{
     margin: 1.5rem;
 }
 
-.image {
+.swiper-slide .image {
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
@@ -684,7 +682,7 @@ nav a, footer a, .title a{
 
 .swiper-slide .image:hover img {
     scale: 110%;
-    
+    filter: blur(4px);
 }
 
 .swiper-slide .image .maximizeminimize-icon-button{
