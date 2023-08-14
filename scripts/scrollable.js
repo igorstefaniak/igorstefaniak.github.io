@@ -3,12 +3,12 @@ const tag = document.querySelector('nav');
 
 
 window.addEventListener('scroll', event => {
-    if (window.pageYOffset > 70 && isTransparent) {
+    if (window.scrollY > 70 && isTransparent) {
         tag.classList.add('_menu-darker');
         isTransparent = false;
     }
 
-    if (window.pageYOffset <= 70 && !isTransparent) {
+    if (window.scrollY <= 70 && !isTransparent) {
         tag.classList.remove('_menu-darker');
         isTransparent = true;
     }
@@ -22,7 +22,7 @@ const handleScroll = (event) => {
     const images = document.querySelectorAll("background img");
   
     
-    images.forEach((element) => {
+    images.forEach((element) => { 
       if (element.getAttribute("src") == "./images/background/circle_quarter.svg"){
         element.style.transform = `translate(0, ${scrollPosition / 10}px) rotate(${- scrollPosition / 10}deg) `;
       }

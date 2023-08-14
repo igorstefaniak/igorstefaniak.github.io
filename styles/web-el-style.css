@@ -1,4 +1,84 @@
-@media only screen and (max-width:359px) {}
+@media only screen and (max-width:359px) {
+  #splash svg {
+    width: -webkit-fill-available;
+  }
+
+  #splash svg:nth-child(1) {
+    display: none;
+  }
+
+  #splash svg:nth-child(2){
+    display:block;
+  }
+
+  .left-navbar svg:nth-child(1),
+  .left-navbar svg:nth-child(2) {
+    display: none;
+  }
+
+  #container {
+    width: 100%;
+  }
+
+  .welcome-text {
+    transform: scale(0.7) !important;
+    text-align: center;
+  }
+
+  .top-navbar .button svg {
+    width: 30px!important;
+  }
+
+  .top-navbar {
+    left: 6px;
+    right: 6px;
+    top: 12px;
+    width: unset !important;
+    background-color: #252429;
+    border-radius: 20px;
+  }
+
+  article {
+    margin-top: 5rem;
+  }
+
+  .welcome {
+    padding-top: 9rem;
+  }
+
+  .left-navbar {
+    scale: 1.1;
+    display: flex;
+  }
+
+  main {
+    padding-top: 0;
+  }
+
+  .avatar {
+    display: none;
+  }
+
+  #settings-menu {
+    right: 10px;
+  }
+
+  .swiper-container{
+    flex-direction: column;
+    align-items: center;
+  }
+  .swiper-container .text-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: unset;
+    gap: 6px;
+  }
+  .text-section .button {
+  margin: unset;
+  margin-top: 12px;
+  }
+}
 
 @media only screen and (max-width:575px) and (min-width:360px) {
   #splash svg {
