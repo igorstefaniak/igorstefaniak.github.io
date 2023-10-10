@@ -20,11 +20,6 @@ switch (true) {
         break;
 }
 
-function love(){
-    let heart = document.getElementById('heart');
-    heart.style.color = "#cc0000";
-}
-
 const btn = document.querySelector("#name");
 var colors = ["#81CAA7", "#D46B84", "#88ABEE", "#C0ADF6"];
 var shapes = ["oval", "triangle", "parallelogram"];

@@ -1,6 +1,7 @@
 @import url("../fonts/Chillax/css/chillax.css");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700;800;900&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&&display=swap');
+@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
 
 /* Igor Stefaniak */
 
@@ -166,15 +167,20 @@ body {
 }
 
 .top-navbar .button {
-    width: 60px;
-    height: 60px;
+    width: 48px;
+    height: 48px;
     display: flex;
     align-items: center;
     justify-content: center;
     background: transparent;
-    border-radius: 20px;
     transition: all .20s cubic-bezier(0.4, 0, 1, 1);
     text-decoration: none;
+    margin: 6px;
+    border-radius: 100%;
+}
+
+.top-navbar .button:hover{
+    background: rgba(var(--accent), 0.2);
 }
 
 .top-navbar .button svg {
@@ -392,7 +398,12 @@ article .title {
     font-size: 1.7rem;
     font-weight: 800;
     margin: 0.1rem 0.1rem 0.1rem 1rem;
+    font-family: 'Euclid Circular A', sans-serif;
+    transition: 0.2s;
+}
 
+article .title:hover ,article .title:hover i{
+    color: rgb(var(--accent));
 }
 
 .main {
@@ -515,7 +526,7 @@ footer p {
     transition: --opacity .3s, background 0.3s; 
 }
 
-.social-media-button:hover:nth-child(1), .social-media-button:hover:nth-child(2) {
+.social-media-button:nth-child(1), .social-media-button:nth-child(2) {
     --opacity: 100%
 }
 
@@ -528,11 +539,11 @@ footer p {
     transition: --opacity .3s, background 0.3s; 
 }
 
-.social-media-button:hover:nth-child(3) {
+.social-media-button:nth-child(3) {
     background-color: var(--youtube);
 }
 
-.social-media-button:hover:nth-child(4) {
+.social-media-button:nth-child(4) {
     background-color: var(--twitter);
 }
 
@@ -709,11 +720,18 @@ nav a, footer a, .title a{
 .swiper-slide .image:hover a {opacity: 1;} 
 
 .text-section .title {
-    font-weight: 600;
-    font-size: 1.5rem;
+    font-weight: 500;
+    font-size: 1.7rem;
     margin: unset;
     margin-bottom: 10px;
 }
+
+.text-section .description {
+    text-align: center;
+    font-family: 'Euclid Circular A', sans-serif;
+    font-weight: 400;
+    font-size: 1.025rem;
+    }
 
 .text-section .button{
     display: flex;
@@ -726,12 +744,19 @@ nav a, footer a, .title a{
     padding: 8px 16px;
     float: right;
     margin: 24px 24px 0px 0px;
+    transition: 0.4s;
+}
+
+.text-section .button:hover {
+    background-color: rgba(var(--accent), 0.7);
 }
 
 .text-section {
     margin-left: 20px;
 }
 
-.description {
-text-align: center;
+
+#heart-icon-button:hover *{
+    stroke: rgb(152, 23, 26);
+    fill: rgb(190, 28, 32)
 }

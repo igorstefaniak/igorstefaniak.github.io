@@ -155,6 +155,7 @@ let twitter = document.querySelector('#twitter-icon-button');
 let facebook = document.querySelector('#facebook-icon-button');
 let instagram = document.querySelector('#instagram-icon-button');
 let youtube = document.querySelector('#youtube-icon-button');
+let heart = document.querySelector('#heart-icon-button');
 
 
 
@@ -276,6 +277,7 @@ for (let i = 0; i < multiple().length; i++) {
   hover(instagram)
   hover(youtube)
   hover(twitter)
+  hover(heart)
 
 console.log('%cIgor Stefaniak 2023', 'font-size: 2em;')
 /* Object.keys({cn})[0] */

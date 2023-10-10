@@ -245,7 +245,7 @@
     top: 12px;
     width: unset !important;
   }
-  .swiper-slide .image {width: 50%;}
+  .swiper-slide .image {max-width: 100%;}
 }
 
 @media only screen and (max-width:1649px) and (min-width:1250px) {}
@@ -270,6 +270,7 @@
 .kontrast {
   background: #ffff00 !important;
   color: #0e0e0e !important;
+  stroke: #0e0e0e !important;
 }
 
 .welcome-text>* {

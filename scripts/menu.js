@@ -64,20 +64,20 @@ if(getCookie("poziom_kontrast") == undefined ){
 else{
     var poziom_kontrast = parseInt(getCookie("poziom_kontrast"));
     if(poziom_kontrast == 1){
-        $("html *").addClass('kontrast');
+        $("html body *, body").addClass('kontrast');
     }
     else{
-        $("html *").removeClass('kontrast');
+        $("html body *, body").removeClass('kontrast');
     }
 }
 function ustaw_kontrast(){
     if(poziom_kontrast==0){
-        $("html *").addClass('kontrast');
+        $("html body *, body").addClass('kontrast');
         poziom_kontrast++;
         document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
     }
     else if(poziom_kontrast==1){
-        $("html *").removeClass('kontrast');
+        $("html body *, body").removeClass('kontrast');
         poziom_kontrast--;
         document.cookie = "poziom_kontrast="+poziom_kontrast+";path=/";
 
@@ -97,7 +97,7 @@ else{
     }
     else if(poziom_odnosniki==1){
         $("a").each(function() {
-            $(this).css('text-decoration', 'underline')
+            $(this).css('text-decoration', 'underline rgb(var(--accent)) 4px')
         });
     }
 }
@@ -106,7 +106,7 @@ function podkresl_odnosniki(){
     console.log(poziom_odnosniki, getCookie("poziom_odnosniki"));
     if(poziom_odnosniki == 0){
         $("a").each(function() {
-            $(this).css('text-decoration', 'underline')
+            $(this).css('text-decoration', 'underline rgb(var(--accent)) 4px')
         });
         poziom_odnosniki++;
         document.cookie = "poziom_odnosniki="+poziom_odnosniki+";path=/";
@@ -237,3 +237,38 @@ function zmien_motyw(){
     }
 }
 
+
+$('#info-box').click(function () {
+
+    $('<div class="info-background">').css({
+        opacity: '0',
+        background: 'RGBA(0,0,0,.5)',
+        backgroundSize: 'contain',
+        width: '100%', height: '100%',
+        position: 'fixed',
+        zIndex: '10000',
+        top: '0', left: '0',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        transition: 'all 500ms',
+        flexDirection: 'column'
+    }).appendTo('body');
+
+    $('<div class="box">').css({
+            borderRadius: '20px',
+            background: '#1d1c21',
+            width: '-webkit-fill-available',
+            width: '-moz-available',
+            margin: '2rem',
+    }).appendTo('.info-background');
+
+    $('<div class="title">').html("Informacje").appendTo($('.box'));
+    setTimeout(function () {
+        $('.info-background').css('opacity', '1')[0];
+        $('.info-box').css('opacity', '1')[0];
+    }
+        , 5);
+
+
+});
