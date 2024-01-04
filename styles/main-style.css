@@ -1,7 +1,7 @@
 @import url("../fonts/Chillax/css/chillax.css");
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;200;300;400;500;600;700;800;900&&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&&display=swap');
-@import url('https://fonts.cdnfonts.com/css/euclid-circular-a');
+  @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&&display=swap');
 
 /* Igor Stefaniak */
 
@@ -263,6 +263,7 @@ a:focus-visible+#settings-menu,
 .menu ul li i,
 article .title i {
     margin-right: 6px;
+    transition: all .2s ease-in-out;
 }
 
 .menu ul li {
@@ -321,6 +322,7 @@ article .title i {
 
 main {
     padding-top: 14rem;
+    padding-bottom: 5rem;
 }
 
 .welcome-text {
@@ -396,14 +398,17 @@ article .title {
     justify-content: flex-start;
     align-items: center;
     font-size: 1.7rem;
-    font-weight: 800;
+    font-weight: 900;
     margin: 0.1rem 0.1rem 0.1rem 1rem;
-    font-family: 'Euclid Circular A', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     transition: 0.2s;
 }
 
-article .title:hover ,article .title:hover i{
+article .title:hover{
     color: rgb(var(--accent));
+}
+article .title:hover i{
+    scale: 1.1;
 }
 
 .main {
@@ -628,6 +633,19 @@ background img:nth-child(12) {
     top: -50px;
 }
 
+background img:nth-child(13) {
+    width: 200px;
+    left: 2100px;
+    top: 350px;
+}
+
+background img:nth-child(14) {
+    width: 250px;
+    left: 2200px;
+    top: 750px;
+}
+
+
 #projekty {
     position: relative;
     display: inline-block;
@@ -720,17 +738,18 @@ nav a, footer a, .title a{
 .swiper-slide .image:hover a {opacity: 1;} 
 
 .text-section .title {
-    font-weight: 500;
+    font-weight: 900;
     font-size: 1.7rem;
     margin: unset;
     margin-bottom: 10px;
 }
 
 .text-section .description {
-    text-align: center;
-    font-family: 'Euclid Circular A', sans-serif;
-    font-weight: 400;
-    font-size: 1.025rem;
+    text-wrap: balance;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: 800;
+    font-size: 1.125rem;
+    color: hsl(252, 8%, 60%);
     }
 
 .text-section .button{
@@ -742,8 +761,8 @@ nav a, footer a, .title a{
     font-family: 'Inter', sans-serif;
     font-weight: 500;
     padding: 8px 16px;
-    float: right;
-    margin: 24px 24px 0px 0px;
+    float: left;
+    margin: 32px 0px 0px 0px;
     transition: 0.4s;
 }
 
