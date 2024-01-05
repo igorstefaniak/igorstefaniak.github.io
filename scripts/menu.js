@@ -258,12 +258,13 @@ $('#info-box').click(function () {
     $('<div class="box">').css({
             borderRadius: '20px',
             background: '#1d1c21',
-            width: '-webkit-fill-available',
-            width: '-moz-available',
             margin: '2rem',
     }).appendTo('.info-background');
 
-    $('<div class="title">').html("Informacje").appendTo($('.box'));
+    $('<div class="mini-bar">').appendTo($('.box'));
+
+    $('<div class="mini-title">').html("Informacje").appendTo($('.mini-bar'));
+    $('<div class="mini-description">').html("Opis").appendTo($('.mini-bar'));
     setTimeout(function () {
         $('.info-background').css('opacity', '1')[0];
         $('.info-box').css('opacity', '1')[0];

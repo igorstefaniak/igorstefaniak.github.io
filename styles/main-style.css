@@ -779,3 +779,11 @@ nav a, footer a, .title a{
     stroke: rgb(152, 23, 26);
     fill: rgb(190, 28, 32)
 }
+
+.box{
+    max-width: 100%;
+}
+
+.mini-bar .mini-title{
+
+}
