@@ -1,6 +1,6 @@
 # Witaj na mojej stronie głównej!
 
-Cześć! Trafiłeś raczej na kod źródłowy tej strony, ale oczywiście życzę miłej zabawy! Usprawniam w dalszym ciągu wygląd, udogodnienia i dostępność dla wszystkich.  
+Cześć! Trafiłeś na kod źródłowy tej strony, życzę miłej zabawy z eksperymentowaniem! Usprawniam w dalszym ciągu wygląd, udogodnienia i dostępność dla wszystkich.  
 
 ## Wygląd i responsywność
 
