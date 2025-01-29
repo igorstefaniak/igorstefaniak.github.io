@@ -152,10 +152,7 @@
     margin: unset;
     gap: 6px;
   }
-  .text-section .button {
-  margin: unset;
-  margin-top: 12px;
-  }
+  
 }
 
 @media only screen and (max-width:899px) and (min-width:576px) {
@@ -227,10 +224,6 @@
     align-items: center;
     margin: unset;
     gap: 6px;
-  }
-  .text-section .button {
-  margin: unset;
-  margin-top: 12px;
   }
 
 }
