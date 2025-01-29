@@ -74,10 +74,7 @@
     margin: unset;
     gap: 6px;
   }
-  .text-section .button {
-  margin: unset;
-  margin-top: 12px;
-  }
+
 }
 
 @media only screen and (max-width:575px) and (min-width:360px) {

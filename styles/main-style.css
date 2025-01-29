@@ -762,7 +762,7 @@ nav a, footer a, .title a{
     font-weight: 500;
     padding: 8px 16px;
     float: left;
-    margin: 32px 0px 0px 0px;
+    margin: 32px 0px 32px 0px;
     transition: 0.4s;
 }
 
