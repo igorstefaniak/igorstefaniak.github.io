@@ -32,6 +32,9 @@ const handleScroll = (event) => {
       else if (element.getAttribute("src") == "./images/background/sparkle.svg"){
         element.style.transform = `translate(0, ${scrollPosition / 10}px) scale(${ scrollPosition / 1000 + 1}) `;
       }
+      else if (element.getAttribute("src") == "./images/background/plus.svg"){
+        element.style.transform = `translate(0, ${scrollPosition / 10}px) scale(${ scrollPosition / 10000 + 1}) `;
+      }
       else{
         element.style.transform = `translate(0, ${scrollPosition / 10}px)`;
       }
